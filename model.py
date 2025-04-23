@@ -102,7 +102,7 @@ class Bert_Encoder(base_model):
         if self.pattern == 'entity_marker':
             self.encoder.resize_token_embeddings(config.vocab_size + 4)  # 增加 4 个额外的标记（E11, E21, E12, E22）
             # 定义线性变换层，将BERT的输出映射到指定的维度
-            self.linear_transform = nn.Linear(self.bert_config.hidden_size * 4, self.output_size, bias=True)
+            self.linear_transform = nn.Linear(self.bert_config.hidden_size * 2, self.output_size, bias=True)
         else:
             self.linear_transform = nn.Linear(self.bert_config.hidden_size, self.output_size, bias=True)
 
@@ -132,43 +132,35 @@ class Bert_Encoder(base_model):
         else:
             # 在 entity_marker 模式下，使用 [E11] 和 [E21] 标记的表示作为头实体和尾实体的表示
             e11 = []  # 第一个实体的开始
-            e12 = []  # 第一个实体的结束
             e21 = []  # 第二个实体的开始
-            e22 = []  # 第二个实体的结束
             # 遍历batch中的每个样本
             for i in range(inputs.size()[0]):
                 tokens = inputs[i].cpu().numpy()  # 获取 token 序列
                 e11.append(np.argwhere(tokens == 30522)[0][0])  # 查找 [E11] 的位置
-                e12.append(np.argwhere(tokens == 30523)[0][0])  # 查找 [E12] 的位置
                 e21.append(np.argwhere(tokens == 30524)[0][0])  # 查找 [E21] 的位置
-                e22.append(np.argwhere(tokens == 30525)[0][0])  # 查找 [E22] 的位置
 
             # 输入到BERT模型，计算出每个token的表示
             attention_mask = inputs != 0  # 注意力掩码，非零的token才计算
             tokens_output = self.encoder(inputs, attention_mask=attention_mask)[0]  # [B, N] --> [B, N, H]
 
-            # 获取每个样本中 [E11] [E21]和 E[21] E[22]  的表示
+            # 获取每个样本中 [E11] 和 E[21]  的表示
             output = []
 
             for i in range(len(e11)):
                 # 获取当前样本（第i个样本）的 [E11] 和 [E12] 的表示
                 instance_output = torch.index_select(tokens_output, 0, torch.tensor(i).cuda())  # 选择第i个样本
-                # 获取实体的表示，拼接 [E11] 和 [E12]，以及 [E21] 和 [E22]
-                entity1_rep = torch.index_select(instance_output, 1,
-                                                 torch.tensor([e11[i], e12[i]]).cuda())  # [E11] 和 [E12] 的表示
-                entity2_rep = torch.index_select(instance_output, 1,
-                                                 torch.tensor([e21[i], e22[i]]).cuda())  # [E21] 和 [E22] 的表示
+                # 获取实体的表示，拼接 [E11] 以及 [E21]
+                entity_rep = torch.index_select(instance_output, 1,
+                                                torch.tensor([e11[i], e21[i]]).cuda())  # [E11] 和 [E12] 的表示
 
-                # 拼接两个实体的表示
-                entity_rep = torch.cat([entity1_rep, entity2_rep], dim=1)  # 拼接，形状为 [4, H]
-                output.append(entity_rep)  # 将每个实体的表示存入列表,output 的形状是 [B, 4, H]
+                output.append(entity_rep)  # 将每个实体的表示存入列表,output 的形状是 [B, 2, H]
 
-            # 拼接每个样本的 [E11], [E12], [E21], [E22] 的表示，得到形状为 [B*N, H*4] 的张量
-            output = torch.cat(output, dim=0)  # 拼接，形状应该是 [B, 4, H]
-            output = output.view(output.size()[0], -1)  # 调整形状为 [B, 4*H]
+            # 拼接每个样本的 [E11], [E12], [E21], [E22] 的表示，得到形状为 [B*N, H*2] 的张量
+            output = torch.cat(output, dim=0)  # 拼接，形状应该是 [B, 2, H]
+            output = output.view(output.size()[0], -1)  # 调整形状为 [B, 2*H]
             # 将拼接后的表示输入到 Dropout 层、线性变换层和 GELU 激活函数中
-            # output = self.drop(output)  # 应用 Dropout
-            output = self.linear_transform(output)  # 线性变换，维度从 4*H 映射到 output_size
+            output = self.drop(output)  # 应用 Dropout
+            output = self.linear_transform(output)  # 线性变换，维度从 2*H 映射到 output_size
             output = F.gelu(output)  # GELU 激活函数
             output = self.layer_normalization(output)  # 层归一化
 
@@ -176,17 +168,7 @@ class Bert_Encoder(base_model):
 
 
 class proto_softmax_layer(base_model):
-    """
-    Softmax classifier for sentence-level relation extraction.
-    """
-
     def __init__(self, sentence_encoder, num_class, id2rel, drop=0, config=None):
-        """
-        Args:
-            sentence_encoder: encoder for sentences
-            num_class: number of classes
-            id2rel: dictionary of id -> relation name mapping
-        """
         super(proto_softmax_layer, self).__init__()
         self.config = config
         self.sentence_encoder = sentence_encoder

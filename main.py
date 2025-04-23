@@ -16,6 +16,8 @@ from config import get_config
 from utils import save_representation_to_file
 import nni
 import torch.nn.functional as F
+import time
+
 from utils import set_seed, select_data, get_proto, get_aca_data
 
 default_print = "\033[0m"
@@ -162,11 +164,11 @@ def nrem_phase(config, task_id, model, mem_set, epochs, current_proto, seen_rela
             labels = torch.tensor([seen_relation_ids.index(i.item()) for i in labels]).long().to(config.device)
             ce_loss = criterion(logits_proto, labels)
             negatives = model.generate_negative_samples(rep)
-            Contrastive_Focal_Distillation_Loss = combined_loss(task_id, rep, rep, negatives, pre_logits, cur_logits,
+            contrastive_focal_distillation_loss = combined_loss(task_id, rep, rep, negatives, pre_logits, cur_logits,
                                                                 labels, alpha=config.alpha,
                                                                 beta=config.beta, temperature=config.temperature,
                                                                 contrastive_temperature=config.contrastive_temperature)
-            loss = ce_loss + Contrastive_Focal_Distillation_Loss
+            loss = ce_loss + contrastive_focal_distillation_loss
             loss.backward()
             losses.append(loss.item())
             torch.nn.utils.clip_grad_norm_(model.parameters(), config.max_grad_norm)
@@ -264,10 +266,11 @@ if __name__ == '__main__':
     memory_results = []
     pid2name = json.load(open('data/pid2name.json', 'r')) if config.task_name.lower() == 'fewrel' else {}
     s = time.time()
+    time_total = []
     for i in range(config.total_round):
         if not os.path.exists(f'reps/{config.exp_name}/{i}'):
             os.mkdir(f'reps/{config.exp_name}/{i}')
-
+        start_time = time.time()
         test_acc = []
         memory_acc = []
         set_seed(config.seed + i * 100)
@@ -351,6 +354,8 @@ if __name__ == '__main__':
             print(f'{green_print}Memory Accuracy: {memory_acc}{default_print}')
             print(f'{green_print}Task Accuracy: {test_acc}{default_print}')
             pre_model = model
+            end_time = time.time()
+        time_total.append(end_time - start_time)
         task_results.append(test_acc)
         memory_results.append(memory_acc)
         average_acc = sum(memory_acc) / len(memory_acc)
@@ -372,4 +377,5 @@ if __name__ == '__main__':
     print(f"{green_print}Final memory results: {memory_results.tolist()}")
     print(f"Final average accuracy: {final_average}")
     print(f"Total time taken: {e - s}s")
+    print(f"total times:{time_total}")
     nni.report_final_result(final_average)

@@ -94,7 +94,7 @@ def get_aca_data(config, training_data, current_relations, tokenizer):
     for rel1, rel2 in zip(current_relations[:config.rel_per_task // 2], current_relations[config.rel_per_task // 2:]):
         datas1 = training_data[rel1]
         datas2 = training_data[rel2]
-        L = max(1, min(50, int(np.random.normal(10, 4))))
+        L = 5
         for data1, data2 in zip(datas1, datas2):
             token1 = data1['tokens'][1:-1][:]
             e11 = token1.index(30522)

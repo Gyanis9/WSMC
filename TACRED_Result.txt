@@ -1,0 +1,2078 @@
+Training Task 0: Relation Set = ['per:cities_of_residence', 'per:other_family', 'org:founded', 'per:origin'].
+Task 0: Total number of data samples = 1781
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                         precision    recall  f1-score   support
+
+per:cities_of_residence       0.95      0.95      0.95        41
+       per:other_family       1.00      1.00      1.00        41
+            org:founded       1.00      0.96      0.98        25
+             per:origin       0.93      0.95      0.94        41
+
+               accuracy                           0.97       148
+              macro avg       0.97      0.97      0.97       148
+           weighted avg       0.97      0.97      0.97       148
+
+Micro F1 Score: 0.9662162162162162
+Macro F1 Score: 0.9676425962685986
+Restart Attempt 1
+Processing Task 1
+Memory Accuracy: [0.9662162162162162]
+Task Accuracy: [0.9662162162162162]
+Training Task 1: Relation Set = ['per:cause_of_death', 'org:dissolved', 'per:employee_of', 'org:member_of'].
+Task 1: Total number of data samples = 1247
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                         precision    recall  f1-score   support
+
+per:cities_of_residence       0.95      0.85      0.90        41
+       per:other_family       0.98      0.98      0.98        41
+            org:founded       0.86      0.72      0.78        25
+             per:origin       0.89      0.95      0.92        41
+     per:cause_of_death       0.97      1.00      0.99        33
+          org:dissolved       0.25      0.40      0.31         5
+        per:employee_of       0.95      0.88      0.91        41
+          org:member_of       0.88      1.00      0.93        28
+
+               accuracy                           0.91       255
+              macro avg       0.84      0.85      0.84       255
+           weighted avg       0.91      0.91      0.91       255
+
+Micro F1 Score: 0.9058823529411765
+Macro F1 Score: 0.8388492601204707
+Restart Attempt 1
+Processing Task 2
+Memory Accuracy: [0.9662162162162162, 0.9058823529411765]
+Task Accuracy: [0.9662162162162162, 0.9252336448598131]
+Training Task 2: Relation Set = ['per:parents', 'per:alternate_names', 'org:top_members/employees', 'per:siblings'].
+Task 2: Total number of data samples = 1390
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                           precision    recall  f1-score   support
+
+  per:cities_of_residence       0.88      0.93      0.90        41
+         per:other_family       0.78      0.68      0.73        41
+              org:founded       0.87      0.80      0.83        25
+               per:origin       0.85      0.98      0.91        41
+       per:cause_of_death       1.00      0.94      0.97        33
+            org:dissolved       0.33      0.40      0.36         5
+          per:employee_of       0.97      0.80      0.88        41
+            org:member_of       0.93      0.93      0.93        28
+              per:parents       0.83      0.83      0.83        41
+      per:alternate_names       0.71      0.96      0.81        23
+org:top_members/employees       1.00      1.00      1.00        41
+             per:siblings       0.82      0.80      0.81        41
+
+                 accuracy                           0.87       401
+                macro avg       0.83      0.84      0.83       401
+             weighted avg       0.87      0.87      0.87       401
+
+Micro F1 Score: 0.8678304239401496
+Macro F1 Score: 0.8311928824149352
+Restart Attempt 1
+Processing Task 3
+Memory Accuracy: [0.9662162162162162, 0.9058823529411765, 0.8678304239401496]
+Task Accuracy: [0.9662162162162162, 0.9252336448598131, 0.8904109589041096]
+Training Task 3: Relation Set = ['per:stateorprovinces_of_residence', 'org:alternate_names', 'org:country_of_headquarters', 'per:country_of_birth'].
+Task 3: Total number of data samples = 1761
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                   precision    recall  f1-score   support
+
+          per:cities_of_residence       0.93      0.90      0.91        41
+                 per:other_family       0.70      0.76      0.73        41
+                      org:founded       0.87      0.80      0.83        25
+                       per:origin       0.86      0.78      0.82        41
+               per:cause_of_death       1.00      0.94      0.97        33
+                    org:dissolved       0.33      0.40      0.36         5
+                  per:employee_of       0.97      0.83      0.89        41
+                    org:member_of       0.94      0.54      0.68        28
+                      per:parents       0.89      0.83      0.86        41
+              per:alternate_names       0.81      0.96      0.88        23
+        org:top_members/employees       1.00      0.98      0.99        41
+                     per:siblings       0.85      0.80      0.82        41
+per:stateorprovinces_of_residence       0.93      0.95      0.94        41
+              org:alternate_names       0.77      0.98      0.86        41
+      org:country_of_headquarters       0.93      0.98      0.95        41
+             per:country_of_birth       0.29      0.83      0.43         6
+
+                         accuracy                           0.86       530
+                        macro avg       0.82      0.83      0.81       530
+                     weighted avg       0.88      0.86      0.86       530
+
+Micro F1 Score: 0.8584905660377359
+Macro F1 Score: 0.8091456886667867
+Restart Attempt 1
+Processing Task 4
+Memory Accuracy: [0.9662162162162162, 0.9058823529411765, 0.8678304239401496, 0.8584905660377359]
+Task Accuracy: [0.9662162162162162, 0.9252336448598131, 0.8904109589041096, 0.9612403100775194]
+Training Task 4: Relation Set = ['per:children', 'per:date_of_birth', 'org:founded_by', 'per:countries_of_residence'].
+Task 4: Total number of data samples = 1549
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                   precision    recall  f1-score   support
+
+          per:cities_of_residence       0.97      0.88      0.92        41
+                 per:other_family       0.60      0.66      0.63        41
+                      org:founded       0.87      0.80      0.83        25
+                       per:origin       0.75      0.59      0.66        41
+               per:cause_of_death       1.00      0.97      0.98        33
+                    org:dissolved       0.33      0.40      0.36         5
+                  per:employee_of       0.94      0.83      0.88        41
+                    org:member_of       0.94      0.61      0.74        28
+                      per:parents       0.87      0.83      0.85        41
+              per:alternate_names       0.76      0.83      0.79        23
+        org:top_members/employees       0.79      0.90      0.84        41
+                     per:siblings       0.86      0.78      0.82        41
+per:stateorprovinces_of_residence       0.93      0.90      0.91        41
+              org:alternate_names       0.78      0.98      0.87        41
+      org:country_of_headquarters       0.93      0.98      0.95        41
+             per:country_of_birth       0.75      0.50      0.60         6
+                     per:children       0.78      0.88      0.83        41
+                per:date_of_birth       1.00      0.93      0.96        14
+                   org:founded_by       0.90      0.71      0.79        38
+       per:countries_of_residence       0.60      0.88      0.71        41
+
+                         accuracy                           0.82       664
+                        macro avg       0.82      0.79      0.80       664
+                     weighted avg       0.84      0.82      0.82       664
+
+Micro F1 Score: 0.822289156626506
+Macro F1 Score: 0.7974251822351246
+Restart Attempt 1
+Processing Task 5
+Memory Accuracy: [0.9662162162162162, 0.9058823529411765, 0.8678304239401496, 0.8584905660377359, 0.822289156626506]
+Task Accuracy: [0.9662162162162162, 0.9252336448598131, 0.8904109589041096, 0.9612403100775194, 0.835820895522388]
+Training Task 5: Relation Set = ['per:schools_attended', 'org:subsidiaries', 'org:members', 'org:political/religious_affiliation'].
+Task 5: Total number of data samples = 1467
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+            per:cities_of_residence       0.95      0.88      0.91        41
+                   per:other_family       0.63      0.66      0.64        41
+                        org:founded       0.87      0.80      0.83        25
+                         per:origin       0.69      0.61      0.65        41
+                 per:cause_of_death       1.00      0.97      0.98        33
+                      org:dissolved       0.33      0.40      0.36         5
+                    per:employee_of       0.97      0.76      0.85        41
+                      org:member_of       0.76      0.46      0.58        28
+                        per:parents       0.88      0.85      0.86        41
+                per:alternate_names       0.82      0.78      0.80        23
+          org:top_members/employees       0.80      0.88      0.84        41
+                       per:siblings       0.89      0.80      0.85        41
+  per:stateorprovinces_of_residence       0.93      0.95      0.94        41
+                org:alternate_names       0.81      0.85      0.83        41
+        org:country_of_headquarters       0.76      0.95      0.85        41
+               per:country_of_birth       0.50      0.50      0.50         6
+                       per:children       0.79      0.90      0.84        41
+                  per:date_of_birth       1.00      0.93      0.96        14
+                     org:founded_by       0.88      0.79      0.83        38
+         per:countries_of_residence       0.59      0.80      0.68        41
+               per:schools_attended       0.89      0.91      0.90        35
+                   org:subsidiaries       0.62      0.90      0.73        41
+                        org:members       0.88      0.53      0.66        40
+org:political/religious_affiliation       1.00      0.87      0.93        23
+
+                           accuracy                           0.81       803
+                          macro avg       0.80      0.78      0.78       803
+                       weighted avg       0.82      0.81      0.81       803
+
+Micro F1 Score: 0.8057285180572852
+Macro F1 Score: 0.784122470642294
+Restart Attempt 1
+Processing Task 6
+Memory Accuracy: [0.9662162162162162, 0.9058823529411765, 0.8678304239401496, 0.8584905660377359, 0.822289156626506, 0.8057285180572852]
+Task Accuracy: [0.9662162162162162, 0.9252336448598131, 0.8904109589041096, 0.9612403100775194, 0.835820895522388, 0.7913669064748201]
+Training Task 6: Relation Set = ['org:stateorprovince_of_headquarters', 'per:charges', 'per:stateorprovince_of_birth', 'per:title'].
+Task 6: Total number of data samples = 1542
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+            per:cities_of_residence       0.97      0.80      0.88        41
+                   per:other_family       0.66      0.61      0.63        41
+                        org:founded       0.88      0.84      0.86        25
+                         per:origin       0.74      0.61      0.67        41
+                 per:cause_of_death       1.00      0.91      0.95        33
+                      org:dissolved       0.40      0.40      0.40         5
+                    per:employee_of       0.94      0.76      0.84        41
+                      org:member_of       0.79      0.54      0.64        28
+                        per:parents       0.88      0.90      0.89        41
+                per:alternate_names       0.95      0.78      0.86        23
+          org:top_members/employees       0.75      0.98      0.85        41
+                       per:siblings       0.92      0.80      0.86        41
+  per:stateorprovinces_of_residence       0.87      0.83      0.85        41
+                org:alternate_names       0.80      0.95      0.87        41
+        org:country_of_headquarters       0.76      0.83      0.79        41
+               per:country_of_birth       0.60      0.50      0.55         6
+                       per:children       0.77      0.90      0.83        41
+                  per:date_of_birth       1.00      0.93      0.96        14
+                     org:founded_by       0.93      0.71      0.81        38
+         per:countries_of_residence       0.60      0.83      0.69        41
+               per:schools_attended       0.91      0.91      0.91        35
+                   org:subsidiaries       0.67      0.85      0.75        41
+                        org:members       1.00      0.50      0.67        40
+org:political/religious_affiliation       1.00      0.91      0.95        23
+org:stateorprovince_of_headquarters       0.81      0.95      0.88        41
+                        per:charges       0.97      1.00      0.99        35
+       per:stateorprovince_of_birth       0.44      0.89      0.59         9
+                          per:title       0.87      1.00      0.93        41
+
+                           accuracy                           0.82       929
+                          macro avg       0.82      0.80      0.80       929
+                       weighted avg       0.84      0.82      0.82       929
+
+Micro F1 Score: 0.8202368137782562
+Macro F1 Score: 0.798005727897593
+Restart Attempt 1
+Processing Task 7
+Memory Accuracy: [0.9662162162162162, 0.9058823529411765, 0.8678304239401496, 0.8584905660377359, 0.822289156626506, 0.8057285180572852, 0.8202368137782562]
+Task Accuracy: [0.9662162162162162, 0.9252336448598131, 0.8904109589041096, 0.9612403100775194, 0.835820895522388, 0.7913669064748201, 0.9761904761904762]
+Training Task 7: Relation Set = ['per:stateorprovince_of_death', 'org:number_of_employees/members', 'per:city_of_death', 'per:spouse'].
+Task 7: Total number of data samples = 1076
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+            per:cities_of_residence       0.90      0.66      0.76        41
+                   per:other_family       0.59      0.49      0.53        41
+                        org:founded       0.88      0.84      0.86        25
+                         per:origin       0.74      0.56      0.64        41
+                 per:cause_of_death       1.00      0.94      0.97        33
+                      org:dissolved       0.40      0.40      0.40         5
+                    per:employee_of       0.94      0.78      0.85        41
+                      org:member_of       0.75      0.43      0.55        28
+                        per:parents       0.86      0.78      0.82        41
+                per:alternate_names       0.89      0.74      0.81        23
+          org:top_members/employees       0.82      0.98      0.89        41
+                       per:siblings       0.91      0.78      0.84        41
+  per:stateorprovinces_of_residence       0.79      0.76      0.78        41
+                org:alternate_names       0.78      0.95      0.86        41
+        org:country_of_headquarters       0.74      0.90      0.81        41
+               per:country_of_birth       0.43      0.50      0.46         6
+                       per:children       0.79      0.93      0.85        41
+                  per:date_of_birth       1.00      0.93      0.96        14
+                     org:founded_by       0.94      0.82      0.87        38
+         per:countries_of_residence       0.59      0.85      0.70        41
+               per:schools_attended       0.94      0.91      0.93        35
+                   org:subsidiaries       0.67      0.88      0.76        41
+                        org:members       0.91      0.50      0.65        40
+org:political/religious_affiliation       1.00      0.91      0.95        23
+org:stateorprovince_of_headquarters       0.91      0.95      0.93        41
+                        per:charges       0.97      1.00      0.99        35
+       per:stateorprovince_of_birth       0.70      0.78      0.74         9
+                          per:title       0.93      1.00      0.96        41
+       per:stateorprovince_of_death       0.53      0.75      0.62        12
+    org:number_of_employees/members       1.00      0.89      0.94        18
+                  per:city_of_death       0.69      0.86      0.77        21
+                         per:spouse       0.67      0.88      0.76        41
+
+                           accuracy                           0.81      1021
+                          macro avg       0.80      0.79      0.79      1021
+                       weighted avg       0.82      0.81      0.81      1021
+
+Micro F1 Score: 0.8090107737512243
+Macro F1 Score: 0.7875747240121649
+Restart Attempt 1
+Processing Task 8
+Memory Accuracy: [0.9662162162162162, 0.9058823529411765, 0.8678304239401496, 0.8584905660377359, 0.822289156626506, 0.8057285180572852, 0.8202368137782562, 0.8090107737512243]
+Task Accuracy: [0.9662162162162162, 0.9252336448598131, 0.8904109589041096, 0.9612403100775194, 0.835820895522388, 0.7913669064748201, 0.9761904761904762, 0.8586956521739131]
+Training Task 8: Relation Set = ['org:website', 'per:age', 'per:city_of_birth', 'per:date_of_death'].
+Task 8: Total number of data samples = 1390
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+            per:cities_of_residence       0.84      0.66      0.74        41
+                   per:other_family       0.57      0.56      0.57        41
+                        org:founded       0.87      0.80      0.83        25
+                         per:origin       0.71      0.61      0.66        41
+                 per:cause_of_death       1.00      0.94      0.97        33
+                      org:dissolved       0.33      0.40      0.36         5
+                    per:employee_of       0.94      0.78      0.85        41
+                      org:member_of       0.76      0.46      0.58        28
+                        per:parents       0.87      0.83      0.85        41
+                per:alternate_names       0.93      0.61      0.74        23
+          org:top_members/employees       0.75      0.93      0.83        41
+                       per:siblings       0.78      0.78      0.78        41
+  per:stateorprovinces_of_residence       0.81      0.83      0.82        41
+                org:alternate_names       0.79      0.90      0.84        41
+        org:country_of_headquarters       0.74      0.85      0.80        41
+               per:country_of_birth       0.50      0.50      0.50         6
+                       per:children       0.78      0.85      0.81        41
+                  per:date_of_birth       0.93      0.93      0.93        14
+                     org:founded_by       0.88      0.76      0.82        38
+         per:countries_of_residence       0.63      0.83      0.72        41
+               per:schools_attended       0.97      0.91      0.94        35
+                   org:subsidiaries       0.64      0.85      0.73        41
+                        org:members       0.95      0.50      0.66        40
+org:political/religious_affiliation       1.00      0.87      0.93        23
+org:stateorprovince_of_headquarters       0.87      0.95      0.91        41
+                        per:charges       0.97      1.00      0.99        35
+       per:stateorprovince_of_birth       0.70      0.78      0.74         9
+                          per:title       0.91      1.00      0.95        41
+       per:stateorprovince_of_death       0.67      0.83      0.74        12
+    org:number_of_employees/members       1.00      0.89      0.94        18
+                  per:city_of_death       0.75      0.71      0.73        21
+                         per:spouse       0.72      0.83      0.77        41
+                        org:website       0.96      0.96      0.96        27
+                            per:age       1.00      0.98      0.99        41
+                  per:city_of_birth       0.61      1.00      0.76        14
+                  per:date_of_death       1.00      0.95      0.97        37
+
+                           accuracy                           0.82      1140
+                          macro avg       0.81      0.80      0.80      1140
+                       weighted avg       0.83      0.82      0.81      1140
+
+Micro F1 Score: 0.8157894736842105
+Macro F1 Score: 0.7970030665638413
+Restart Attempt 1
+Processing Task 9
+Memory Accuracy: [0.9662162162162162, 0.9058823529411765, 0.8678304239401496, 0.8584905660377359, 0.822289156626506, 0.8057285180572852, 0.8202368137782562, 0.8090107737512243, 0.8157894736842105]
+Task Accuracy: [0.9662162162162162, 0.9252336448598131, 0.8904109589041096, 0.9612403100775194, 0.835820895522388, 0.7913669064748201, 0.9761904761904762, 0.8586956521739131, 0.9663865546218487]
+Training Task 9: Relation Set = ['org:shareholders', 'org:parents', 'org:city_of_headquarters', 'per:religion'].
+Task 9: Total number of data samples = 1613
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+            per:cities_of_residence       0.85      0.71      0.77        41
+                   per:other_family       0.59      0.56      0.57        41
+                        org:founded       0.90      0.72      0.80        25
+                         per:origin       0.80      0.49      0.61        41
+                 per:cause_of_death       1.00      0.91      0.95        33
+                      org:dissolved       0.33      0.60      0.43         5
+                    per:employee_of       0.94      0.78      0.85        41
+                      org:member_of       0.82      0.32      0.46        28
+                        per:parents       0.87      0.80      0.84        41
+                per:alternate_names       0.93      0.61      0.74        23
+          org:top_members/employees       0.73      0.88      0.80        41
+                       per:siblings       0.84      0.78      0.81        41
+  per:stateorprovinces_of_residence       0.79      0.83      0.81        41
+                org:alternate_names       0.85      0.95      0.90        41
+        org:country_of_headquarters       0.73      0.88      0.80        41
+               per:country_of_birth       0.60      0.50      0.55         6
+                       per:children       0.79      0.93      0.85        41
+                  per:date_of_birth       0.93      0.93      0.93        14
+                     org:founded_by       0.78      0.76      0.77        38
+         per:countries_of_residence       0.59      0.88      0.71        41
+               per:schools_attended       0.94      0.91      0.93        35
+                   org:subsidiaries       0.69      0.71      0.70        41
+                        org:members       0.91      0.50      0.65        40
+org:political/religious_affiliation       1.00      0.91      0.95        23
+org:stateorprovince_of_headquarters       0.86      0.93      0.89        41
+                        per:charges       0.95      1.00      0.97        35
+       per:stateorprovince_of_birth       0.64      0.78      0.70         9
+                          per:title       0.93      1.00      0.96        41
+       per:stateorprovince_of_death       0.58      0.58      0.58        12
+    org:number_of_employees/members       1.00      0.89      0.94        18
+                  per:city_of_death       0.83      0.71      0.77        21
+                         per:spouse       0.69      0.83      0.76        41
+                        org:website       0.96      0.96      0.96        27
+                            per:age       0.98      0.98      0.98        41
+                  per:city_of_birth       0.64      1.00      0.78        14
+                  per:date_of_death       1.00      0.95      0.97        37
+                   org:shareholders       0.47      0.53      0.50        17
+                        org:parents       0.68      0.88      0.77        41
+           org:city_of_headquarters       0.91      0.95      0.93        41
+                       per:religion       0.83      1.00      0.91        20
+
+                           accuracy                           0.81      1259
+                          macro avg       0.80      0.80      0.79      1259
+                       weighted avg       0.82      0.81      0.81      1259
+
+Micro F1 Score: 0.8109610802223988
+Macro F1 Score: 0.788611304007864
+Restart Attempt 1
+Processing Task 10
+Memory Accuracy: [0.9662162162162162, 0.9058823529411765, 0.8678304239401496, 0.8584905660377359, 0.822289156626506, 0.8057285180572852, 0.8202368137782562, 0.8090107737512243, 0.8157894736842105, 0.8109610802223988]
+Task Accuracy: [0.9662162162162162, 0.9252336448598131, 0.8904109589041096, 0.9612403100775194, 0.835820895522388, 0.7913669064748201, 0.9761904761904762, 0.8586956521739131, 0.9663865546218487, 0.8739495798319328]
+Current Average Accuracy: 0.848243537525516
+[2025-04-23 19:02:52] Intermediate result: 0.848243537525516  (Index 0)
+Training Task 0: Relation Set = ['per:alternate_names', 'org:founded', 'per:city_of_birth', 'per:employee_of'].
+Task 0: Total number of data samples = 1131
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                     precision    recall  f1-score   support
+
+per:alternate_names       0.95      0.91      0.93        23
+        org:founded       1.00      0.96      0.98        25
+  per:city_of_birth       1.00      1.00      1.00        14
+    per:employee_of       0.93      0.98      0.95        41
+
+           accuracy                           0.96       103
+          macro avg       0.97      0.96      0.97       103
+       weighted avg       0.96      0.96      0.96       103
+
+Micro F1 Score: 0.9611650485436893
+Macro F1 Score: 0.9663265306122448
+Restart Attempt 2
+Processing Task 1
+Memory Accuracy: [0.9611650485436893]
+Task Accuracy: [0.9611650485436893]
+Training Task 1: Relation Set = ['org:website', 'org:member_of', 'org:shareholders', 'per:schools_attended'].
+Task 1: Total number of data samples = 964
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                      precision    recall  f1-score   support
+
+ per:alternate_names       0.87      0.87      0.87        23
+         org:founded       1.00      0.96      0.98        25
+   per:city_of_birth       1.00      1.00      1.00        14
+     per:employee_of       0.95      0.85      0.90        41
+         org:website       0.96      0.96      0.96        27
+       org:member_of       0.78      0.64      0.71        28
+    org:shareholders       0.57      0.94      0.71        17
+per:schools_attended       0.97      0.94      0.96        35
+
+            accuracy                           0.89       210
+           macro avg       0.89      0.90      0.89       210
+        weighted avg       0.90      0.89      0.89       210
+
+Micro F1 Score: 0.8857142857142857
+Macro F1 Score: 0.8853838897134476
+Restart Attempt 2
+Processing Task 2
+Memory Accuracy: [0.9611650485436893, 0.8857142857142857]
+Task Accuracy: [0.9611650485436893, 0.8691588785046729]
+Training Task 2: Relation Set = ['per:other_family', 'per:title', 'org:country_of_headquarters', 'per:charges'].
+Task 2: Total number of data samples = 1856
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                             precision    recall  f1-score   support
+
+        per:alternate_names       0.93      0.57      0.70        23
+                org:founded       1.00      0.96      0.98        25
+          per:city_of_birth       1.00      1.00      1.00        14
+            per:employee_of       0.94      0.83      0.88        41
+                org:website       0.96      0.96      0.96        27
+              org:member_of       0.82      0.50      0.62        28
+           org:shareholders       0.68      1.00      0.81        17
+       per:schools_attended       0.97      0.91      0.94        35
+           per:other_family       0.78      0.95      0.86        41
+                  per:title       0.85      1.00      0.92        41
+org:country_of_headquarters       0.84      0.93      0.88        41
+                per:charges       1.00      1.00      1.00        35
+
+                   accuracy                           0.89       368
+                  macro avg       0.90      0.88      0.88       368
+               weighted avg       0.90      0.89      0.88       368
+
+Micro F1 Score: 0.8885869565217391
+Macro F1 Score: 0.8802924158194722
+Restart Attempt 2
+Processing Task 3
+Memory Accuracy: [0.9611650485436893, 0.8857142857142857, 0.8885869565217391]
+Task Accuracy: [0.9611650485436893, 0.8691588785046729, 0.9683544303797469]
+Training Task 3: Relation Set = ['per:cities_of_residence', 'per:siblings', 'org:parents', 'per:city_of_death'].
+Task 3: Total number of data samples = 1777
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                             precision    recall  f1-score   support
+
+        per:alternate_names       1.00      0.61      0.76        23
+                org:founded       1.00      0.96      0.98        25
+          per:city_of_birth       0.83      0.71      0.77        14
+            per:employee_of       0.97      0.78      0.86        41
+                org:website       0.96      0.96      0.96        27
+              org:member_of       0.75      0.32      0.45        28
+           org:shareholders       0.91      0.59      0.71        17
+       per:schools_attended       0.97      0.94      0.96        35
+           per:other_family       0.69      0.44      0.54        41
+                  per:title       0.93      1.00      0.96        41
+org:country_of_headquarters       0.84      0.88      0.86        41
+                per:charges       1.00      1.00      1.00        35
+    per:cities_of_residence       0.76      0.90      0.82        41
+               per:siblings       0.53      0.83      0.65        41
+                org:parents       0.58      0.90      0.70        41
+          per:city_of_death       0.90      0.86      0.88        21
+
+                   accuracy                           0.81       512
+                  macro avg       0.85      0.79      0.80       512
+               weighted avg       0.83      0.81      0.80       512
+
+Micro F1 Score: 0.80859375
+Macro F1 Score: 0.8041267982117997
+Restart Attempt 2
+Processing Task 4
+Memory Accuracy: [0.9611650485436893, 0.8857142857142857, 0.8885869565217391, 0.80859375]
+Task Accuracy: [0.9611650485436893, 0.8691588785046729, 0.9683544303797469, 0.875]
+Training Task 4: Relation Set = ['org:number_of_employees/members', 'org:founded_by', 'per:date_of_birth', 'org:stateorprovince_of_headquarters'].
+Task 4: Total number of data samples = 1132
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+                per:alternate_names       0.93      0.61      0.74        23
+                        org:founded       1.00      0.96      0.98        25
+                  per:city_of_birth       0.79      0.79      0.79        14
+                    per:employee_of       0.97      0.83      0.89        41
+                        org:website       0.90      0.96      0.93        27
+                      org:member_of       0.71      0.36      0.48        28
+                   org:shareholders       0.78      0.41      0.54        17
+               per:schools_attended       0.97      0.94      0.96        35
+                   per:other_family       0.75      0.59      0.66        41
+                          per:title       0.93      1.00      0.96        41
+        org:country_of_headquarters       0.81      0.83      0.82        41
+                        per:charges       0.97      1.00      0.99        35
+            per:cities_of_residence       0.76      0.85      0.80        41
+                       per:siblings       0.62      0.83      0.71        41
+                        org:parents       0.66      0.85      0.74        41
+                  per:city_of_death       0.90      0.86      0.88        21
+    org:number_of_employees/members       0.94      0.83      0.88        18
+                     org:founded_by       0.79      0.97      0.87        38
+                  per:date_of_birth       1.00      0.93      0.96        14
+org:stateorprovince_of_headquarters       0.82      0.90      0.86        41
+
+                           accuracy                           0.83       623
+                          macro avg       0.85      0.82      0.82       623
+                       weighted avg       0.84      0.83      0.82       623
+
+Micro F1 Score: 0.8298555377207063
+Macro F1 Score: 0.821804645211903
+Restart Attempt 2
+Processing Task 5
+Memory Accuracy: [0.9611650485436893, 0.8857142857142857, 0.8885869565217391, 0.80859375, 0.8298555377207063]
+Task Accuracy: [0.9611650485436893, 0.8691588785046729, 0.9683544303797469, 0.875, 0.918918918918919]
+Training Task 5: Relation Set = ['per:countries_of_residence', 'per:religion', 'per:date_of_death', 'per:stateorprovince_of_death'].
+Task 5: Total number of data samples = 1301
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+                per:alternate_names       0.94      0.65      0.77        23
+                        org:founded       1.00      0.96      0.98        25
+                  per:city_of_birth       0.80      0.86      0.83        14
+                    per:employee_of       0.97      0.80      0.88        41
+                        org:website       0.90      0.96      0.93        27
+                      org:member_of       0.77      0.36      0.49        28
+                   org:shareholders       0.62      0.47      0.53        17
+               per:schools_attended       0.97      0.91      0.94        35
+                   per:other_family       0.72      0.71      0.72        41
+                          per:title       0.93      1.00      0.96        41
+        org:country_of_headquarters       0.85      0.98      0.91        41
+                        per:charges       0.97      1.00      0.99        35
+            per:cities_of_residence       0.84      0.78      0.81        41
+                       per:siblings       0.66      0.76      0.70        41
+                        org:parents       0.70      0.85      0.77        41
+                  per:city_of_death       0.86      0.86      0.86        21
+    org:number_of_employees/members       1.00      0.83      0.91        18
+                     org:founded_by       0.80      0.97      0.88        38
+                  per:date_of_birth       0.93      0.93      0.93        14
+org:stateorprovince_of_headquarters       0.95      0.93      0.94        41
+         per:countries_of_residence       0.85      0.98      0.91        41
+                       per:religion       0.91      1.00      0.95        20
+                  per:date_of_death       1.00      0.95      0.97        37
+       per:stateorprovince_of_death       0.79      0.92      0.85        12
+
+                           accuracy                           0.86       733
+                          macro avg       0.86      0.85      0.85       733
+                       weighted avg       0.86      0.86      0.85       733
+
+Micro F1 Score: 0.859481582537517
+Macro F1 Score: 0.8500348544633299
+Restart Attempt 2
+Processing Task 6
+Memory Accuracy: [0.9611650485436893, 0.8857142857142857, 0.8885869565217391, 0.80859375, 0.8298555377207063, 0.859481582537517]
+Task Accuracy: [0.9611650485436893, 0.8691588785046729, 0.9683544303797469, 0.875, 0.918918918918919, 0.9636363636363636]
+Training Task 6: Relation Set = ['per:spouse', 'per:age', 'per:country_of_birth', 'per:stateorprovince_of_birth'].
+Task 6: Total number of data samples = 1367
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+                per:alternate_names       0.92      0.52      0.67        23
+                        org:founded       1.00      0.96      0.98        25
+                  per:city_of_birth       0.79      0.79      0.79        14
+                    per:employee_of       0.97      0.80      0.88        41
+                        org:website       0.96      0.96      0.96        27
+                      org:member_of       0.77      0.36      0.49        28
+                   org:shareholders       0.50      0.53      0.51        17
+               per:schools_attended       0.94      0.91      0.93        35
+                   per:other_family       0.57      0.41      0.48        41
+                          per:title       0.95      1.00      0.98        41
+        org:country_of_headquarters       0.87      0.98      0.92        41
+                        per:charges       1.00      1.00      1.00        35
+            per:cities_of_residence       0.86      0.78      0.82        41
+                       per:siblings       0.79      0.63      0.70        41
+                        org:parents       0.71      0.85      0.78        41
+                  per:city_of_death       0.90      0.86      0.88        21
+    org:number_of_employees/members       1.00      0.94      0.97        18
+                     org:founded_by       0.80      0.92      0.85        38
+                  per:date_of_birth       0.93      0.93      0.93        14
+org:stateorprovince_of_headquarters       0.95      0.93      0.94        41
+         per:countries_of_residence       0.82      0.98      0.89        41
+                       per:religion       0.91      1.00      0.95        20
+                  per:date_of_death       1.00      0.95      0.97        37
+       per:stateorprovince_of_death       0.92      0.92      0.92        12
+                         per:spouse       0.51      0.88      0.65        41
+                            per:age       1.00      0.98      0.99        41
+               per:country_of_birth       1.00      0.50      0.67         6
+       per:stateorprovince_of_birth       0.64      1.00      0.78         9
+
+                           accuracy                           0.84       830
+                          macro avg       0.86      0.83      0.83       830
+                       weighted avg       0.85      0.84      0.84       830
+
+Micro F1 Score: 0.8409638554216867
+Macro F1 Score: 0.830924135961712
+Restart Attempt 2
+Processing Task 7
+Memory Accuracy: [0.9611650485436893, 0.8857142857142857, 0.8885869565217391, 0.80859375, 0.8298555377207063, 0.859481582537517, 0.8409638554216867]
+Task Accuracy: [0.9611650485436893, 0.8691588785046729, 0.9683544303797469, 0.875, 0.918918918918919, 0.9636363636363636, 0.9072164948453608]
+Training Task 7: Relation Set = ['per:cause_of_death', 'org:dissolved', 'org:city_of_headquarters', 'org:members'].
+Task 7: Total number of data samples = 1353
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+                per:alternate_names       0.93      0.57      0.70        23
+                        org:founded       0.91      0.80      0.85        25
+                  per:city_of_birth       0.86      0.86      0.86        14
+                    per:employee_of       1.00      0.83      0.91        41
+                        org:website       0.90      0.96      0.93        27
+                      org:member_of       0.73      0.29      0.41        28
+                   org:shareholders       0.64      0.53      0.58        17
+               per:schools_attended       0.94      0.91      0.93        35
+                   per:other_family       0.56      0.46      0.51        41
+                          per:title       0.95      1.00      0.98        41
+        org:country_of_headquarters       0.76      0.90      0.82        41
+                        per:charges       1.00      1.00      1.00        35
+            per:cities_of_residence       0.86      0.76      0.81        41
+                       per:siblings       0.81      0.63      0.71        41
+                        org:parents       0.70      0.76      0.73        41
+                  per:city_of_death       0.86      0.90      0.88        21
+    org:number_of_employees/members       1.00      0.83      0.91        18
+                     org:founded_by       0.86      0.95      0.90        38
+                  per:date_of_birth       0.93      0.93      0.93        14
+org:stateorprovince_of_headquarters       0.93      0.90      0.91        41
+         per:countries_of_residence       0.80      0.95      0.87        41
+                       per:religion       0.91      1.00      0.95        20
+                  per:date_of_death       1.00      0.95      0.97        37
+       per:stateorprovince_of_death       0.79      0.92      0.85        12
+                         per:spouse       0.57      0.90      0.70        41
+                            per:age       1.00      0.98      0.99        41
+               per:country_of_birth       1.00      0.33      0.50         6
+       per:stateorprovince_of_birth       0.82      1.00      0.90         9
+                 per:cause_of_death       1.00      1.00      1.00        33
+                      org:dissolved       0.43      0.60      0.50         5
+           org:city_of_headquarters       0.85      0.98      0.91        41
+                        org:members       0.72      0.82      0.77        40
+
+                           accuracy                           0.84       949
+                          macro avg       0.84      0.82      0.82       949
+                       weighted avg       0.85      0.84      0.83       949
+
+Micro F1 Score: 0.8387776606954689
+Macro F1 Score: 0.8172277340852511
+Restart Attempt 2
+Processing Task 8
+Memory Accuracy: [0.9611650485436893, 0.8857142857142857, 0.8885869565217391, 0.80859375, 0.8298555377207063, 0.859481582537517, 0.8409638554216867, 0.8387776606954689]
+Task Accuracy: [0.9611650485436893, 0.8691588785046729, 0.9683544303797469, 0.875, 0.918918918918919, 0.9636363636363636, 0.9072164948453608, 0.9159663865546218]
+Training Task 8: Relation Set = ['per:origin', 'per:children', 'per:stateorprovinces_of_residence', 'org:political/religious_affiliation'].
+Task 8: Total number of data samples = 2019
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+                per:alternate_names       0.93      0.57      0.70        23
+                        org:founded       0.91      0.80      0.85        25
+                  per:city_of_birth       0.81      0.93      0.87        14
+                    per:employee_of       0.97      0.80      0.88        41
+                        org:website       0.90      0.96      0.93        27
+                      org:member_of       0.60      0.21      0.32        28
+                   org:shareholders       0.67      0.59      0.62        17
+               per:schools_attended       0.94      0.91      0.93        35
+                   per:other_family       0.49      0.54      0.51        41
+                          per:title       0.93      1.00      0.96        41
+        org:country_of_headquarters       0.71      0.95      0.81        41
+                        per:charges       1.00      1.00      1.00        35
+            per:cities_of_residence       0.86      0.78      0.82        41
+                       per:siblings       0.88      0.56      0.69        41
+                        org:parents       0.73      0.73      0.73        41
+                  per:city_of_death       0.86      0.86      0.86        21
+    org:number_of_employees/members       1.00      0.83      0.91        18
+                     org:founded_by       0.88      0.95      0.91        38
+                  per:date_of_birth       0.93      0.93      0.93        14
+org:stateorprovince_of_headquarters       0.86      0.93      0.89        41
+         per:countries_of_residence       0.62      0.83      0.71        41
+                       per:religion       0.95      1.00      0.98        20
+                  per:date_of_death       1.00      0.95      0.97        37
+       per:stateorprovince_of_death       0.79      0.92      0.85        12
+                         per:spouse       0.63      0.80      0.71        41
+                            per:age       1.00      0.98      0.99        41
+               per:country_of_birth       0.75      0.50      0.60         6
+       per:stateorprovince_of_birth       0.80      0.89      0.84         9
+                 per:cause_of_death       1.00      0.97      0.98        33
+                      org:dissolved       0.43      0.60      0.50         5
+           org:city_of_headquarters       0.86      0.90      0.88        41
+                        org:members       0.64      0.70      0.67        40
+                         per:origin       0.71      0.59      0.64        41
+                       per:children       0.74      0.90      0.81        41
+  per:stateorprovinces_of_residence       0.85      0.85      0.85        41
+org:political/religious_affiliation       0.95      0.87      0.91        23
+
+                           accuracy                           0.82      1095
+                          macro avg       0.82      0.81      0.81      1095
+                       weighted avg       0.83      0.82      0.81      1095
+
+Micro F1 Score: 0.817351598173516
+Macro F1 Score: 0.8059775978812018
+Restart Attempt 2
+Processing Task 9
+Memory Accuracy: [0.9611650485436893, 0.8857142857142857, 0.8885869565217391, 0.80859375, 0.8298555377207063, 0.859481582537517, 0.8409638554216867, 0.8387776606954689, 0.817351598173516]
+Task Accuracy: [0.9611650485436893, 0.8691588785046729, 0.9683544303797469, 0.875, 0.918918918918919, 0.9636363636363636, 0.9072164948453608, 0.9159663865546218, 0.7945205479452054]
+Training Task 9: Relation Set = ['per:parents', 'org:top_members/employees', 'org:subsidiaries', 'org:alternate_names'].
+Task 9: Total number of data samples = 2101
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+                per:alternate_names       0.83      0.65      0.73        23
+                        org:founded       0.91      0.84      0.88        25
+                  per:city_of_birth       0.76      0.93      0.84        14
+                    per:employee_of       1.00      0.80      0.89        41
+                        org:website       0.90      0.96      0.93        27
+                      org:member_of       0.80      0.14      0.24        28
+                   org:shareholders       0.75      0.35      0.48        17
+               per:schools_attended       0.94      0.91      0.93        35
+                   per:other_family       0.49      0.44      0.46        41
+                          per:title       0.93      1.00      0.96        41
+        org:country_of_headquarters       0.76      0.93      0.84        41
+                        per:charges       1.00      1.00      1.00        35
+            per:cities_of_residence       0.89      0.76      0.82        41
+                       per:siblings       0.78      0.61      0.68        41
+                        org:parents       0.69      0.71      0.70        41
+                  per:city_of_death       0.86      0.86      0.86        21
+    org:number_of_employees/members       1.00      0.83      0.91        18
+                     org:founded_by       0.87      0.71      0.78        38
+                  per:date_of_birth       0.93      0.93      0.93        14
+org:stateorprovince_of_headquarters       0.87      0.95      0.91        41
+         per:countries_of_residence       0.65      0.78      0.71        41
+                       per:religion       0.95      1.00      0.98        20
+                  per:date_of_death       1.00      0.95      0.97        37
+       per:stateorprovince_of_death       0.71      0.83      0.77        12
+                         per:spouse       0.67      0.78      0.72        41
+                            per:age       1.00      0.98      0.99        41
+               per:country_of_birth       0.80      0.67      0.73         6
+       per:stateorprovince_of_birth       0.67      0.89      0.76         9
+                 per:cause_of_death       1.00      1.00      1.00        33
+                      org:dissolved       0.50      0.60      0.55         5
+           org:city_of_headquarters       0.93      0.90      0.91        41
+                        org:members       0.73      0.55      0.63        40
+                         per:origin       0.68      0.63      0.66        41
+                       per:children       0.71      0.85      0.78        41
+  per:stateorprovinces_of_residence       0.85      0.83      0.84        41
+org:political/religious_affiliation       1.00      0.87      0.93        23
+                        per:parents       0.77      0.80      0.79        41
+          org:top_members/employees       0.67      0.93      0.78        41
+                   org:subsidiaries       0.63      0.83      0.72        41
+                org:alternate_names       0.68      0.95      0.80        41
+
+                           accuracy                           0.81      1259
+                          macro avg       0.81      0.80      0.79      1259
+                       weighted avg       0.81      0.81      0.80      1259
+
+Micro F1 Score: 0.8054011119936457
+Macro F1 Score: 0.7937886616316809
+Restart Attempt 2
+Processing Task 10
+Memory Accuracy: [0.9611650485436893, 0.8857142857142857, 0.8885869565217391, 0.80859375, 0.8298555377207063, 0.859481582537517, 0.8409638554216867, 0.8387776606954689, 0.817351598173516, 0.8054011119936457]
+Task Accuracy: [0.9611650485436893, 0.8691588785046729, 0.9683544303797469, 0.875, 0.918918918918919, 0.9636363636363636, 0.9072164948453608, 0.9159663865546218, 0.7945205479452054, 0.8780487804878049]
+Current Average Accuracy: 0.8535891387322255
+[2025-04-23 19:06:42] Intermediate result: 0.8535891387322255  (Index 1)
+Training Task 0: Relation Set = ['per:stateorprovinces_of_residence', 'per:age', 'per:parents', 'per:date_of_birth'].
+Task 0: Total number of data samples = 1931
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                   precision    recall  f1-score   support
+
+per:stateorprovinces_of_residence       1.00      1.00      1.00        41
+                          per:age       0.98      0.98      0.98        41
+                      per:parents       0.95      0.98      0.96        41
+                per:date_of_birth       1.00      0.93      0.96        14
+
+                         accuracy                           0.98       137
+                        macro avg       0.98      0.97      0.98       137
+                     weighted avg       0.98      0.98      0.98       137
+
+Micro F1 Score: 0.9781021897810219
+Macro F1 Score: 0.9756070351868177
+Restart Attempt 3
+Processing Task 1
+Memory Accuracy: [0.9781021897810219]
+Task Accuracy: [0.9781021897810219]
+Training Task 1: Relation Set = ['org:political/religious_affiliation', 'per:schools_attended', 'per:cities_of_residence', 'org:number_of_employees/members'].
+Task 1: Total number of data samples = 1355
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+  per:stateorprovinces_of_residence       0.97      0.93      0.95        41
+                            per:age       1.00      0.98      0.99        41
+                        per:parents       0.95      0.98      0.96        41
+                  per:date_of_birth       1.00      0.93      0.96        14
+org:political/religious_affiliation       1.00      1.00      1.00        23
+               per:schools_attended       0.94      0.94      0.94        35
+            per:cities_of_residence       0.98      0.98      0.98        41
+    org:number_of_employees/members       0.86      1.00      0.92        18
+
+                           accuracy                           0.96       254
+                          macro avg       0.96      0.97      0.96       254
+                       weighted avg       0.97      0.96      0.96       254
+
+Micro F1 Score: 0.9645669291338582
+Macro F1 Score: 0.9632520659586239
+Restart Attempt 3
+Processing Task 2
+Memory Accuracy: [0.9781021897810219, 0.9645669291338582]
+Task Accuracy: [0.9781021897810219, 0.9743589743589743]
+Training Task 2: Relation Set = ['org:subsidiaries', 'org:city_of_headquarters', 'per:children', 'org:stateorprovince_of_headquarters'].
+Task 2: Total number of data samples = 2345
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+  per:stateorprovinces_of_residence       0.93      0.95      0.94        41
+                            per:age       1.00      0.98      0.99        41
+                        per:parents       0.91      0.95      0.93        41
+                  per:date_of_birth       1.00      0.93      0.96        14
+org:political/religious_affiliation       1.00      0.87      0.93        23
+               per:schools_attended       0.97      0.94      0.96        35
+            per:cities_of_residence       1.00      0.85      0.92        41
+    org:number_of_employees/members       1.00      0.94      0.97        18
+                   org:subsidiaries       0.82      1.00      0.90        41
+           org:city_of_headquarters       0.91      0.98      0.94        41
+                       per:children       0.95      0.93      0.94        41
+org:stateorprovince_of_headquarters       0.97      0.95      0.96        41
+
+                           accuracy                           0.94       418
+                          macro avg       0.96      0.94      0.95       418
+                       weighted avg       0.95      0.94      0.94       418
+
+Micro F1 Score: 0.9425837320574163
+Macro F1 Score: 0.9451410990443737
+Restart Attempt 3
+Processing Task 3
+Memory Accuracy: [0.9781021897810219, 0.9645669291338582, 0.9425837320574163]
+Task Accuracy: [0.9781021897810219, 0.9743589743589743, 0.9634146341463414]
+Training Task 3: Relation Set = ['per:employee_of', 'org:top_members/employees', 'org:parents', 'per:stateorprovince_of_birth'].
+Task 3: Total number of data samples = 2085
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+  per:stateorprovinces_of_residence       0.91      0.73      0.81        41
+                            per:age       1.00      0.98      0.99        41
+                        per:parents       0.91      0.98      0.94        41
+                  per:date_of_birth       1.00      0.93      0.96        14
+org:political/religious_affiliation       1.00      0.83      0.90        23
+               per:schools_attended       0.97      0.94      0.96        35
+            per:cities_of_residence       1.00      0.90      0.95        41
+    org:number_of_employees/members       1.00      0.94      0.97        18
+                   org:subsidiaries       0.94      0.80      0.87        41
+           org:city_of_headquarters       0.95      0.95      0.95        41
+                       per:children       0.95      0.93      0.94        41
+org:stateorprovince_of_headquarters       0.93      0.95      0.94        41
+                    per:employee_of       0.83      0.95      0.89        41
+          org:top_members/employees       0.93      1.00      0.96        41
+                        org:parents       0.80      0.95      0.87        41
+       per:stateorprovince_of_birth       0.53      0.89      0.67         9
+
+                           accuracy                           0.92       550
+                          macro avg       0.92      0.92      0.91       550
+                       weighted avg       0.93      0.92      0.92       550
+
+Micro F1 Score: 0.9181818181818182
+Macro F1 Score: 0.910381799209249
+Restart Attempt 3
+Processing Task 4
+Memory Accuracy: [0.9781021897810219, 0.9645669291338582, 0.9425837320574163, 0.9181818181818182]
+Task Accuracy: [0.9781021897810219, 0.9743589743589743, 0.9634146341463414, 0.9621212121212122]
+Training Task 4: Relation Set = ['per:countries_of_residence', 'per:religion', 'org:founded', 'org:founded_by'].
+Task 4: Total number of data samples = 1375
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+  per:stateorprovinces_of_residence       0.92      0.83      0.87        41
+                            per:age       1.00      0.98      0.99        41
+                        per:parents       0.85      0.98      0.91        41
+                  per:date_of_birth       1.00      0.93      0.96        14
+org:political/religious_affiliation       1.00      0.87      0.93        23
+               per:schools_attended       0.97      0.86      0.91        35
+            per:cities_of_residence       0.92      0.88      0.90        41
+    org:number_of_employees/members       1.00      0.94      0.97        18
+                   org:subsidiaries       0.89      0.83      0.86        41
+           org:city_of_headquarters       0.95      0.98      0.96        41
+                       per:children       0.95      0.93      0.94        41
+org:stateorprovince_of_headquarters       0.95      0.95      0.95        41
+                    per:employee_of       0.89      0.80      0.85        41
+          org:top_members/employees       0.80      0.80      0.80        41
+                        org:parents       0.80      0.85      0.82        41
+       per:stateorprovince_of_birth       0.67      0.89      0.76         9
+         per:countries_of_residence       0.83      0.98      0.90        41
+                       per:religion       0.91      1.00      0.95        20
+                        org:founded       1.00      0.96      0.98        25
+                     org:founded_by       0.78      0.84      0.81        38
+
+                           accuracy                           0.90       674
+                          macro avg       0.90      0.90      0.90       674
+                       weighted avg       0.90      0.90      0.90       674
+
+Micro F1 Score: 0.8991097922848664
+Macro F1 Score: 0.9016901490239375
+Restart Attempt 3
+Processing Task 5
+Memory Accuracy: [0.9781021897810219, 0.9645669291338582, 0.9425837320574163, 0.9181818181818182, 0.8991097922848664]
+Task Accuracy: [0.9781021897810219, 0.9743589743589743, 0.9634146341463414, 0.9621212121212122, 0.9354838709677419]
+Training Task 5: Relation Set = ['per:stateorprovince_of_death', 'org:country_of_headquarters', 'per:country_of_birth', 'per:other_family'].
+Task 5: Total number of data samples = 1054
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+  per:stateorprovinces_of_residence       0.85      0.68      0.76        41
+                            per:age       1.00      0.98      0.99        41
+                        per:parents       0.83      0.83      0.83        41
+                  per:date_of_birth       1.00      0.93      0.96        14
+org:political/religious_affiliation       1.00      0.87      0.93        23
+               per:schools_attended       0.97      0.91      0.94        35
+            per:cities_of_residence       1.00      0.90      0.95        41
+    org:number_of_employees/members       1.00      0.94      0.97        18
+                   org:subsidiaries       0.97      0.78      0.86        41
+           org:city_of_headquarters       0.95      0.90      0.93        41
+                       per:children       0.87      0.80      0.84        41
+org:stateorprovince_of_headquarters       0.97      0.95      0.96        41
+                    per:employee_of       0.97      0.83      0.89        41
+          org:top_members/employees       0.76      0.83      0.79        41
+                        org:parents       0.78      0.93      0.84        41
+       per:stateorprovince_of_birth       0.80      0.89      0.84         9
+         per:countries_of_residence       0.87      0.95      0.91        41
+                       per:religion       0.87      1.00      0.93        20
+                        org:founded       1.00      0.96      0.98        25
+                     org:founded_by       0.78      0.76      0.77        38
+       per:stateorprovince_of_death       0.45      0.75      0.56        12
+        org:country_of_headquarters       0.85      0.95      0.90        41
+               per:country_of_birth       0.67      0.67      0.67         6
+                   per:other_family       0.64      0.78      0.70        41
+
+                           accuracy                           0.87       774
+                          macro avg       0.87      0.87      0.86       774
+                       weighted avg       0.88      0.87      0.87       774
+
+Micro F1 Score: 0.8682170542635659
+Macro F1 Score: 0.8628167724453425
+Restart Attempt 3
+Processing Task 6
+Memory Accuracy: [0.9781021897810219, 0.9645669291338582, 0.9425837320574163, 0.9181818181818182, 0.8991097922848664, 0.8682170542635659]
+Task Accuracy: [0.9781021897810219, 0.9743589743589743, 0.9634146341463414, 0.9621212121212122, 0.9354838709677419, 0.84]
+Training Task 6: Relation Set = ['org:alternate_names', 'per:alternate_names', 'per:origin', 'org:shareholders'].
+Task 6: Total number of data samples = 1290
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+  per:stateorprovinces_of_residence       0.88      0.68      0.77        41
+                            per:age       1.00      0.98      0.99        41
+                        per:parents       0.84      0.88      0.86        41
+                  per:date_of_birth       1.00      0.93      0.96        14
+org:political/religious_affiliation       1.00      0.87      0.93        23
+               per:schools_attended       0.91      0.91      0.91        35
+            per:cities_of_residence       0.95      0.90      0.93        41
+    org:number_of_employees/members       1.00      0.94      0.97        18
+                   org:subsidiaries       0.96      0.61      0.75        41
+           org:city_of_headquarters       0.95      0.90      0.93        41
+                       per:children       0.83      0.71      0.76        41
+org:stateorprovince_of_headquarters       0.97      0.93      0.95        41
+                    per:employee_of       0.86      0.78      0.82        41
+          org:top_members/employees       0.79      0.76      0.78        41
+                        org:parents       0.79      0.63      0.70        41
+       per:stateorprovince_of_birth       0.78      0.78      0.78         9
+         per:countries_of_residence       0.64      0.66      0.65        41
+                       per:religion       1.00      1.00      1.00        20
+                        org:founded       1.00      0.96      0.98        25
+                     org:founded_by       0.73      0.84      0.78        38
+       per:stateorprovince_of_death       0.48      0.83      0.61        12
+        org:country_of_headquarters       0.84      0.93      0.88        41
+               per:country_of_birth       1.00      0.33      0.50         6
+                   per:other_family       0.62      0.59      0.60        41
+                org:alternate_names       0.67      0.98      0.79        41
+                per:alternate_names       0.64      0.91      0.75        23
+                         per:origin       0.64      0.73      0.68        41
+                   org:shareholders       0.52      0.71      0.60        17
+
+                           accuracy                           0.81       896
+                          macro avg       0.83      0.81      0.81       896
+                       weighted avg       0.83      0.81      0.81       896
+
+Micro F1 Score: 0.8125
+Macro F1 Score: 0.8071646822267331
+Restart Attempt 3
+Processing Task 7
+Memory Accuracy: [0.9781021897810219, 0.9645669291338582, 0.9425837320574163, 0.9181818181818182, 0.8991097922848664, 0.8682170542635659, 0.8125]
+Task Accuracy: [0.9781021897810219, 0.9743589743589743, 0.9634146341463414, 0.9621212121212122, 0.9354838709677419, 0.84, 0.8442622950819673]
+Training Task 7: Relation Set = ['org:website', 'org:dissolved', 'org:member_of', 'per:city_of_birth'].
+Task 7: Total number of data samples = 670
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+  per:stateorprovinces_of_residence       0.88      0.68      0.77        41
+                            per:age       1.00      0.98      0.99        41
+                        per:parents       0.82      0.90      0.86        41
+                  per:date_of_birth       1.00      0.93      0.96        14
+org:political/religious_affiliation       1.00      0.87      0.93        23
+               per:schools_attended       0.91      0.91      0.91        35
+            per:cities_of_residence       0.91      0.71      0.79        41
+    org:number_of_employees/members       1.00      0.94      0.97        18
+                   org:subsidiaries       0.93      0.68      0.79        41
+           org:city_of_headquarters       0.93      0.93      0.93        41
+                       per:children       0.83      0.73      0.78        41
+org:stateorprovince_of_headquarters       0.95      0.90      0.93        41
+                    per:employee_of       0.94      0.78      0.85        41
+          org:top_members/employees       0.80      0.85      0.82        41
+                        org:parents       0.62      0.44      0.51        41
+       per:stateorprovince_of_birth       0.70      0.78      0.74         9
+         per:countries_of_residence       0.64      0.71      0.67        41
+                       per:religion       0.95      1.00      0.98        20
+                        org:founded       0.95      0.80      0.87        25
+                     org:founded_by       0.82      0.82      0.82        38
+       per:stateorprovince_of_death       0.50      0.83      0.62        12
+        org:country_of_headquarters       0.88      0.93      0.90        41
+               per:country_of_birth       0.80      0.67      0.73         6
+                   per:other_family       0.62      0.61      0.62        41
+                org:alternate_names       0.69      0.90      0.78        41
+                per:alternate_names       0.69      0.87      0.77        23
+                         per:origin       0.66      0.66      0.66        41
+                   org:shareholders       0.52      0.65      0.58        17
+                        org:website       0.96      0.93      0.94        27
+                      org:dissolved       0.50      0.80      0.62         5
+                      org:member_of       0.40      0.57      0.47        28
+                  per:city_of_birth       0.67      1.00      0.80        14
+
+                           accuracy                           0.80       970
+                          macro avg       0.80      0.80      0.79       970
+                       weighted avg       0.81      0.80      0.80       970
+
+Micro F1 Score: 0.7958762886597938
+Macro F1 Score: 0.7925368402886008
+Restart Attempt 3
+Processing Task 8
+Memory Accuracy: [0.9781021897810219, 0.9645669291338582, 0.9425837320574163, 0.9181818181818182, 0.8991097922848664, 0.8682170542635659, 0.8125, 0.7958762886597938]
+Task Accuracy: [0.9781021897810219, 0.9743589743589743, 0.9634146341463414, 0.9621212121212122, 0.9354838709677419, 0.84, 0.8442622950819673, 0.7972972972972973]
+Training Task 8: Relation Set = ['per:date_of_death', 'per:title', 'per:cause_of_death', 'per:spouse'].
+Task 8: Total number of data samples = 1932
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+  per:stateorprovinces_of_residence       0.85      0.71      0.77        41
+                            per:age       1.00      0.98      0.99        41
+                        per:parents       0.81      0.83      0.82        41
+                  per:date_of_birth       0.93      1.00      0.97        14
+org:political/religious_affiliation       1.00      0.87      0.93        23
+               per:schools_attended       0.94      0.91      0.93        35
+            per:cities_of_residence       0.94      0.73      0.82        41
+    org:number_of_employees/members       1.00      0.94      0.97        18
+                   org:subsidiaries       0.96      0.61      0.75        41
+           org:city_of_headquarters       0.95      0.93      0.94        41
+                       per:children       0.85      0.83      0.84        41
+org:stateorprovince_of_headquarters       0.97      0.93      0.95        41
+                    per:employee_of       0.89      0.76      0.82        41
+          org:top_members/employees       0.78      0.85      0.81        41
+                        org:parents       0.71      0.54      0.61        41
+       per:stateorprovince_of_birth       0.80      0.89      0.84         9
+         per:countries_of_residence       0.64      0.73      0.68        41
+                       per:religion       1.00      1.00      1.00        20
+                        org:founded       0.95      0.80      0.87        25
+                     org:founded_by       0.78      0.82      0.79        38
+       per:stateorprovince_of_death       0.53      0.83      0.65        12
+        org:country_of_headquarters       0.85      0.85      0.85        41
+               per:country_of_birth       0.57      0.67      0.62         6
+                   per:other_family       0.60      0.22      0.32        41
+                org:alternate_names       0.72      0.93      0.81        41
+                per:alternate_names       0.83      0.87      0.85        23
+                         per:origin       0.68      0.66      0.67        41
+                   org:shareholders       0.45      0.59      0.51        17
+                        org:website       0.93      0.93      0.93        27
+                      org:dissolved       0.50      0.80      0.62         5
+                      org:member_of       0.41      0.54      0.46        28
+                  per:city_of_birth       0.70      1.00      0.82        14
+                  per:date_of_death       1.00      0.95      0.97        37
+                          per:title       0.87      1.00      0.93        41
+                 per:cause_of_death       1.00      0.97      0.98        33
+                         per:spouse       0.55      0.90      0.69        41
+
+                           accuracy                           0.81      1122
+                          macro avg       0.80      0.82      0.80      1122
+                       weighted avg       0.82      0.81      0.80      1122
+
+Micro F1 Score: 0.8057040998217468
+Macro F1 Score: 0.7993075607903962
+Restart Attempt 3
+Processing Task 9
+Memory Accuracy: [0.9781021897810219, 0.9645669291338582, 0.9425837320574163, 0.9181818181818182, 0.8991097922848664, 0.8682170542635659, 0.8125, 0.7958762886597938, 0.8057040998217468]
+Task Accuracy: [0.9781021897810219, 0.9743589743589743, 0.9634146341463414, 0.9621212121212122, 0.9354838709677419, 0.84, 0.8442622950819673, 0.7972972972972973, 0.9539473684210527]
+Training Task 9: Relation Set = ['per:charges', 'per:city_of_death', 'per:siblings', 'org:members'].
+Task 9: Total number of data samples = 1065
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+  per:stateorprovinces_of_residence       0.88      0.71      0.78        41
+                            per:age       1.00      0.98      0.99        41
+                        per:parents       0.81      0.85      0.83        41
+                  per:date_of_birth       0.87      0.93      0.90        14
+org:political/religious_affiliation       0.95      0.83      0.88        23
+               per:schools_attended       0.94      0.91      0.93        35
+            per:cities_of_residence       0.90      0.63      0.74        41
+    org:number_of_employees/members       1.00      0.89      0.94        18
+                   org:subsidiaries       0.88      0.51      0.65        41
+           org:city_of_headquarters       0.93      0.93      0.93        41
+                       per:children       0.78      0.71      0.74        41
+org:stateorprovince_of_headquarters       0.97      0.83      0.89        41
+                    per:employee_of       0.91      0.76      0.83        41
+          org:top_members/employees       0.80      0.88      0.84        41
+                        org:parents       0.68      0.51      0.58        41
+       per:stateorprovince_of_birth       0.73      0.89      0.80         9
+         per:countries_of_residence       0.68      0.73      0.71        41
+                       per:religion       0.95      1.00      0.98        20
+                        org:founded       0.95      0.80      0.87        25
+                     org:founded_by       0.84      0.82      0.83        38
+       per:stateorprovince_of_death       0.55      0.92      0.69        12
+        org:country_of_headquarters       0.69      0.85      0.76        41
+               per:country_of_birth       0.67      0.67      0.67         6
+                   per:other_family       0.60      0.44      0.51        41
+                org:alternate_names       0.69      0.90      0.78        41
+                per:alternate_names       0.78      0.78      0.78        23
+                         per:origin       0.70      0.73      0.71        41
+                   org:shareholders       0.50      0.65      0.56        17
+                        org:website       0.93      0.93      0.93        27
+                      org:dissolved       0.50      0.80      0.62         5
+                      org:member_of       0.38      0.43      0.40        28
+                  per:city_of_birth       0.78      1.00      0.88        14
+                  per:date_of_death       1.00      0.92      0.96        37
+                          per:title       0.89      1.00      0.94        41
+                 per:cause_of_death       1.00      1.00      1.00        33
+                         per:spouse       0.69      0.76      0.72        41
+                        per:charges       1.00      1.00      1.00        35
+                  per:city_of_death       0.76      0.90      0.83        21
+                       per:siblings       0.63      0.80      0.71        41
+                        org:members       0.55      0.60      0.57        40
+
+                           accuracy                           0.79      1259
+                          macro avg       0.79      0.80      0.79      1259
+                       weighted avg       0.81      0.79      0.79      1259
+
+Micro F1 Score: 0.7926926131850676
+Macro F1 Score: 0.7909897174228616
+Restart Attempt 3
+Processing Task 10
+Memory Accuracy: [0.9781021897810219, 0.9645669291338582, 0.9425837320574163, 0.9181818181818182, 0.8991097922848664, 0.8682170542635659, 0.8125, 0.7958762886597938, 0.8057040998217468, 0.7926926131850676]
+Task Accuracy: [0.9781021897810219, 0.9743589743589743, 0.9634146341463414, 0.9621212121212122, 0.9354838709677419, 0.84, 0.8442622950819673, 0.7972972972972973, 0.9539473684210527, 0.8102189781021898]
+Current Average Accuracy: 0.8777534517369154
+[2025-04-23 19:10:37] Intermediate result: 0.8777534517369154  (Index 2)
+Training Task 0: Relation Set = ['per:schools_attended', 'per:origin', 'per:age', 'per:stateorprovinces_of_residence'].
+Task 0: Total number of data samples = 2396
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                   precision    recall  f1-score   support
+
+             per:schools_attended       0.97      0.97      0.97        35
+                       per:origin       0.98      0.98      0.98        41
+                          per:age       1.00      1.00      1.00        41
+per:stateorprovinces_of_residence       0.98      0.98      0.98        41
+
+                         accuracy                           0.98       158
+                        macro avg       0.98      0.98      0.98       158
+                     weighted avg       0.98      0.98      0.98       158
+
+Micro F1 Score: 0.9810126582278481
+Macro F1 Score: 0.9806620209059234
+Restart Attempt 4
+Processing Task 1
+Memory Accuracy: [0.9810126582278481]
+Task Accuracy: [0.9810126582278481]
+Training Task 1: Relation Set = ['org:stateorprovince_of_headquarters', 'per:parents', 'per:date_of_birth', 'per:spouse'].
+Task 1: Total number of data samples = 1702
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+               per:schools_attended       0.92      0.97      0.94        35
+                         per:origin       1.00      0.98      0.99        41
+                            per:age       1.00      0.98      0.99        41
+  per:stateorprovinces_of_residence       0.97      0.93      0.95        41
+org:stateorprovince_of_headquarters       0.95      0.98      0.96        41
+                        per:parents       0.90      0.93      0.92        41
+                  per:date_of_birth       1.00      0.93      0.96        14
+                         per:spouse       0.93      0.95      0.94        41
+
+                           accuracy                           0.96       295
+                          macro avg       0.96      0.95      0.96       295
+                       weighted avg       0.96      0.96      0.96       295
+
+Micro F1 Score: 0.9559322033898305
+Macro F1 Score: 0.9564991447270563
+Restart Attempt 4
+Processing Task 2
+Memory Accuracy: [0.9810126582278481, 0.9559322033898305]
+Task Accuracy: [0.9810126582278481, 0.948905109489051]
+Training Task 2: Relation Set = ['per:cities_of_residence', 'org:city_of_headquarters', 'org:political/religious_affiliation', 'org:shareholders'].
+Task 2: Total number of data samples = 1663
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+               per:schools_attended       0.97      0.91      0.94        35
+                         per:origin       0.93      0.95      0.94        41
+                            per:age       0.98      0.98      0.98        41
+  per:stateorprovinces_of_residence       0.95      0.95      0.95        41
+org:stateorprovince_of_headquarters       0.97      0.93      0.95        41
+                        per:parents       0.95      0.93      0.94        41
+                  per:date_of_birth       1.00      0.93      0.96        14
+                         per:spouse       0.93      0.98      0.95        41
+            per:cities_of_residence       0.95      0.90      0.93        41
+           org:city_of_headquarters       0.93      1.00      0.96        41
+org:political/religious_affiliation       1.00      0.96      0.98        23
+                   org:shareholders       0.85      1.00      0.92        17
+
+                           accuracy                           0.95       417
+                          macro avg       0.95      0.95      0.95       417
+                       weighted avg       0.95      0.95      0.95       417
+
+Micro F1 Score: 0.9496402877697842
+Macro F1 Score: 0.9498152395297769
+Restart Attempt 4
+Processing Task 3
+Memory Accuracy: [0.9810126582278481, 0.9559322033898305, 0.9496402877697842]
+Task Accuracy: [0.9810126582278481, 0.948905109489051, 0.9590163934426229]
+Training Task 3: Relation Set = ['per:alternate_names', 'per:other_family', 'org:alternate_names', 'per:religion'].
+Task 3: Total number of data samples = 836
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+               per:schools_attended       0.97      0.91      0.94        35
+                         per:origin       0.95      0.98      0.96        41
+                            per:age       1.00      0.98      0.99        41
+  per:stateorprovinces_of_residence       0.97      0.93      0.95        41
+org:stateorprovince_of_headquarters       0.95      0.95      0.95        41
+                        per:parents       0.86      0.73      0.79        41
+                  per:date_of_birth       1.00      0.93      0.96        14
+                         per:spouse       0.88      0.73      0.80        41
+            per:cities_of_residence       0.95      0.93      0.94        41
+           org:city_of_headquarters       0.97      0.93      0.95        41
+org:political/religious_affiliation       1.00      0.87      0.93        23
+                   org:shareholders       0.87      0.76      0.81        17
+                per:alternate_names       0.81      0.96      0.88        23
+                   per:other_family       0.62      0.80      0.70        41
+                org:alternate_names       0.85      1.00      0.92        41
+                       per:religion       0.87      1.00      0.93        20
+
+                           accuracy                           0.90       542
+                          macro avg       0.91      0.90      0.90       542
+                       weighted avg       0.91      0.90      0.90       542
+
+Micro F1 Score: 0.8985239852398524
+Macro F1 Score: 0.9006909417518624
+Restart Attempt 4
+Processing Task 4
+Memory Accuracy: [0.9810126582278481, 0.9559322033898305, 0.9496402877697842, 0.8985239852398524]
+Task Accuracy: [0.9810126582278481, 0.948905109489051, 0.9590163934426229, 0.928]
+Training Task 4: Relation Set = ['org:dissolved', 'per:city_of_birth', 'org:website', 'per:countries_of_residence'].
+Task 4: Total number of data samples = 1048
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+               per:schools_attended       0.94      0.89      0.91        35
+                         per:origin       0.73      0.73      0.73        41
+                            per:age       1.00      0.98      0.99        41
+  per:stateorprovinces_of_residence       0.95      0.93      0.94        41
+org:stateorprovince_of_headquarters       0.95      0.90      0.93        41
+                        per:parents       0.89      0.76      0.82        41
+                  per:date_of_birth       1.00      0.93      0.96        14
+                         per:spouse       0.80      0.78      0.79        41
+            per:cities_of_residence       0.94      0.78      0.85        41
+           org:city_of_headquarters       0.95      1.00      0.98        41
+org:political/religious_affiliation       1.00      0.87      0.93        23
+                   org:shareholders       0.84      0.94      0.89        17
+                per:alternate_names       0.81      0.96      0.88        23
+                   per:other_family       0.62      0.73      0.67        41
+                org:alternate_names       0.95      0.98      0.96        41
+                       per:religion       0.91      1.00      0.95        20
+                      org:dissolved       1.00      1.00      1.00         5
+                  per:city_of_birth       0.65      0.93      0.76        14
+                        org:website       1.00      0.96      0.98        27
+         per:countries_of_residence       0.69      0.71      0.70        41
+
+                           accuracy                           0.87       629
+                          macro avg       0.88      0.89      0.88       629
+                       weighted avg       0.88      0.87      0.87       629
+
+Micro F1 Score: 0.8680445151033387
+Macro F1 Score: 0.8813472957428499
+Restart Attempt 4
+Processing Task 5
+Memory Accuracy: [0.9810126582278481, 0.9559322033898305, 0.9496402877697842, 0.8985239852398524, 0.8680445151033387]
+Task Accuracy: [0.9810126582278481, 0.948905109489051, 0.9590163934426229, 0.928, 0.8390804597701149]
+Training Task 5: Relation Set = ['per:children', 'org:members', 'per:charges', 'per:siblings'].
+Task 5: Total number of data samples = 1336
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+               per:schools_attended       0.94      0.89      0.91        35
+                         per:origin       0.73      0.78      0.75        41
+                            per:age       1.00      0.98      0.99        41
+  per:stateorprovinces_of_residence       0.97      0.93      0.95        41
+org:stateorprovince_of_headquarters       0.95      0.93      0.94        41
+                        per:parents       0.89      0.78      0.83        41
+                  per:date_of_birth       1.00      0.93      0.96        14
+                         per:spouse       0.78      0.78      0.78        41
+            per:cities_of_residence       0.89      0.80      0.85        41
+           org:city_of_headquarters       0.93      1.00      0.96        41
+org:political/religious_affiliation       1.00      0.83      0.90        23
+                   org:shareholders       0.94      0.88      0.91        17
+                per:alternate_names       0.75      0.91      0.82        23
+                   per:other_family       0.57      0.59      0.58        41
+                org:alternate_names       0.89      0.98      0.93        41
+                       per:religion       0.87      1.00      0.93        20
+                      org:dissolved       1.00      1.00      1.00         5
+                  per:city_of_birth       0.71      0.86      0.77        14
+                        org:website       1.00      0.96      0.98        27
+         per:countries_of_residence       0.72      0.68      0.70        41
+                       per:children       0.86      0.88      0.87        41
+                        org:members       0.85      0.85      0.85        40
+                        per:charges       1.00      1.00      1.00        35
+                       per:siblings       0.74      0.76      0.75        41
+
+                           accuracy                           0.86       786
+                          macro avg       0.87      0.87      0.87       786
+                       weighted avg       0.86      0.86      0.86       786
+
+Micro F1 Score: 0.8600508905852418
+Macro F1 Score: 0.8717522994120097
+Restart Attempt 4
+Processing Task 6
+Memory Accuracy: [0.9810126582278481, 0.9559322033898305, 0.9496402877697842, 0.8985239852398524, 0.8680445151033387, 0.8600508905852418]
+Task Accuracy: [0.9810126582278481, 0.948905109489051, 0.9590163934426229, 0.928, 0.8390804597701149, 0.8662420382165605]
+Training Task 6: Relation Set = ['per:country_of_birth', 'per:title', 'org:top_members/employees', 'per:date_of_death'].
+Task 6: Total number of data samples = 1686
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+               per:schools_attended       0.94      0.89      0.91        35
+                         per:origin       0.72      0.63      0.68        41
+                            per:age       1.00      0.98      0.99        41
+  per:stateorprovinces_of_residence       0.97      0.93      0.95        41
+org:stateorprovince_of_headquarters       0.95      0.95      0.95        41
+                        per:parents       0.91      0.78      0.84        41
+                  per:date_of_birth       0.93      0.93      0.93        14
+                         per:spouse       0.76      0.76      0.76        41
+            per:cities_of_residence       0.92      0.83      0.87        41
+           org:city_of_headquarters       0.95      1.00      0.98        41
+org:political/religious_affiliation       1.00      0.83      0.90        23
+                   org:shareholders       0.89      0.47      0.62        17
+                per:alternate_names       0.84      0.91      0.88        23
+                   per:other_family       0.54      0.63      0.58        41
+                org:alternate_names       0.82      0.98      0.89        41
+                       per:religion       0.83      1.00      0.91        20
+                      org:dissolved       1.00      1.00      1.00         5
+                  per:city_of_birth       0.76      0.93      0.84        14
+                        org:website       1.00      0.96      0.98        27
+         per:countries_of_residence       0.68      0.73      0.71        41
+                       per:children       0.88      0.85      0.86        41
+                        org:members       0.91      0.72      0.81        40
+                        per:charges       1.00      1.00      1.00        35
+                       per:siblings       0.72      0.71      0.72        41
+               per:country_of_birth       0.30      0.50      0.38         6
+                          per:title       0.95      1.00      0.98        41
+          org:top_members/employees       0.80      1.00      0.89        41
+                  per:date_of_death       1.00      0.95      0.97        37
+
+                           accuracy                           0.86       911
+                          macro avg       0.86      0.85      0.85       911
+                       weighted avg       0.87      0.86      0.86       911
+
+Micro F1 Score: 0.8572996706915478
+Macro F1 Score: 0.8483700863333773
+Restart Attempt 4
+Processing Task 7
+Memory Accuracy: [0.9810126582278481, 0.9559322033898305, 0.9496402877697842, 0.8985239852398524, 0.8680445151033387, 0.8600508905852418, 0.8572996706915478]
+Task Accuracy: [0.9810126582278481, 0.948905109489051, 0.9590163934426229, 0.928, 0.8390804597701149, 0.8662420382165605, 0.96]
+Training Task 7: Relation Set = ['per:stateorprovince_of_birth', 'org:member_of', 'per:stateorprovince_of_death', 'org:founded'].
+Task 7: Total number of data samples = 678
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+               per:schools_attended       0.91      0.91      0.91        35
+                         per:origin       0.72      0.68      0.70        41
+                            per:age       1.00      0.98      0.99        41
+  per:stateorprovinces_of_residence       0.90      0.63      0.74        41
+org:stateorprovince_of_headquarters       0.95      0.93      0.94        41
+                        per:parents       0.89      0.80      0.85        41
+                  per:date_of_birth       0.86      0.86      0.86        14
+                         per:spouse       0.79      0.73      0.76        41
+            per:cities_of_residence       0.94      0.73      0.82        41
+           org:city_of_headquarters       0.89      1.00      0.94        41
+org:political/religious_affiliation       0.95      0.87      0.91        23
+                   org:shareholders       1.00      0.47      0.64        17
+                per:alternate_names       0.81      0.91      0.86        23
+                   per:other_family       0.56      0.61      0.58        41
+                org:alternate_names       0.90      0.85      0.88        41
+                       per:religion       0.91      1.00      0.95        20
+                      org:dissolved       0.40      0.80      0.53         5
+                  per:city_of_birth       0.74      1.00      0.85        14
+                        org:website       1.00      0.93      0.96        27
+         per:countries_of_residence       0.67      0.73      0.70        41
+                       per:children       0.86      0.88      0.87        41
+                        org:members       0.88      0.72      0.79        40
+                        per:charges       1.00      1.00      1.00        35
+                       per:siblings       0.84      0.76      0.79        41
+               per:country_of_birth       0.43      0.50      0.46         6
+                          per:title       0.93      1.00      0.96        41
+          org:top_members/employees       0.80      1.00      0.89        41
+                  per:date_of_death       1.00      0.92      0.96        37
+       per:stateorprovince_of_birth       0.47      0.89      0.62         9
+                      org:member_of       0.50      0.71      0.59        28
+       per:stateorprovince_of_death       0.57      0.67      0.62        12
+                        org:founded       0.90      0.76      0.83        25
+
+                           accuracy                           0.83       985
+                          macro avg       0.81      0.82      0.80       985
+                       weighted avg       0.85      0.83      0.83       985
+
+Micro F1 Score: 0.8294416243654822
+Macro F1 Score: 0.8044873657765803
+Restart Attempt 4
+Processing Task 8
+Memory Accuracy: [0.9810126582278481, 0.9559322033898305, 0.9496402877697842, 0.8985239852398524, 0.8680445151033387, 0.8600508905852418, 0.8572996706915478, 0.8294416243654822]
+Task Accuracy: [0.9810126582278481, 0.948905109489051, 0.9590163934426229, 0.928, 0.8390804597701149, 0.8662420382165605, 0.96, 0.7432432432432432]
+Training Task 8: Relation Set = ['org:number_of_employees/members', 'per:employee_of', 'org:parents', 'org:founded_by'].
+Task 8: Total number of data samples = 1778
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+               per:schools_attended       0.94      0.91      0.93        35
+                         per:origin       0.70      0.68      0.69        41
+                            per:age       1.00      1.00      1.00        41
+  per:stateorprovinces_of_residence       0.83      0.61      0.70        41
+org:stateorprovince_of_headquarters       0.95      0.90      0.93        41
+                        per:parents       0.82      0.76      0.78        41
+                  per:date_of_birth       0.93      0.93      0.93        14
+                         per:spouse       0.78      0.78      0.78        41
+            per:cities_of_residence       0.94      0.73      0.82        41
+           org:city_of_headquarters       0.91      1.00      0.95        41
+org:political/religious_affiliation       1.00      0.83      0.90        23
+                   org:shareholders       0.54      0.41      0.47        17
+                per:alternate_names       0.83      0.87      0.85        23
+                   per:other_family       0.51      0.56      0.53        41
+                org:alternate_names       0.94      0.76      0.84        41
+                       per:religion       0.91      1.00      0.95        20
+                      org:dissolved       0.40      0.80      0.53         5
+                  per:city_of_birth       0.78      1.00      0.88        14
+                        org:website       0.96      0.96      0.96        27
+         per:countries_of_residence       0.65      0.76      0.70        41
+                       per:children       0.85      0.83      0.84        41
+                        org:members       0.91      0.78      0.84        40
+                        per:charges       1.00      1.00      1.00        35
+                       per:siblings       0.78      0.68      0.73        41
+               per:country_of_birth       0.60      0.50      0.55         6
+                          per:title       0.89      1.00      0.94        41
+          org:top_members/employees       0.69      1.00      0.82        41
+                  per:date_of_death       1.00      0.95      0.97        37
+       per:stateorprovince_of_birth       0.47      0.89      0.62         9
+                      org:member_of       0.35      0.29      0.31        28
+       per:stateorprovince_of_death       0.53      0.67      0.59        12
+                        org:founded       0.95      0.76      0.84        25
+    org:number_of_employees/members       1.00      0.89      0.94        18
+                    per:employee_of       0.97      0.83      0.89        41
+                        org:parents       0.48      0.76      0.58        41
+                     org:founded_by       0.93      0.71      0.81        38
+
+                           accuracy                           0.80      1123
+                          macro avg       0.80      0.80      0.79      1123
+                       weighted avg       0.82      0.80      0.81      1123
+
+Micro F1 Score: 0.804986642920748
+Macro F1 Score: 0.7891853910382685
+Restart Attempt 4
+Processing Task 9
+Memory Accuracy: [0.9810126582278481, 0.9559322033898305, 0.9496402877697842, 0.8985239852398524, 0.8680445151033387, 0.8600508905852418, 0.8572996706915478, 0.8294416243654822, 0.804986642920748]
+Task Accuracy: [0.9810126582278481, 0.948905109489051, 0.9590163934426229, 0.928, 0.8390804597701149, 0.8662420382165605, 0.96, 0.7432432432432432, 0.782608695652174]
+Training Task 9: Relation Set = ['per:city_of_death', 'per:cause_of_death', 'org:country_of_headquarters', 'org:subsidiaries'].
+Task 9: Total number of data samples = 1775
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+               per:schools_attended       0.94      0.94      0.94        35
+                         per:origin       0.72      0.68      0.70        41
+                            per:age       1.00      1.00      1.00        41
+  per:stateorprovinces_of_residence       0.87      0.63      0.73        41
+org:stateorprovince_of_headquarters       0.90      0.93      0.92        41
+                        per:parents       0.82      0.76      0.78        41
+                  per:date_of_birth       0.93      0.93      0.93        14
+                         per:spouse       0.76      0.78      0.77        41
+            per:cities_of_residence       0.88      0.51      0.65        41
+           org:city_of_headquarters       0.91      0.98      0.94        41
+org:political/religious_affiliation       0.95      0.83      0.88        23
+                   org:shareholders       0.50      0.41      0.45        17
+                per:alternate_names       0.83      0.87      0.85        23
+                   per:other_family       0.51      0.54      0.52        41
+                org:alternate_names       0.97      0.73      0.83        41
+                       per:religion       0.91      1.00      0.95        20
+                      org:dissolved       0.44      0.80      0.57         5
+                  per:city_of_birth       0.70      1.00      0.82        14
+                        org:website       0.96      0.96      0.96        27
+         per:countries_of_residence       0.65      0.68      0.67        41
+                       per:children       0.85      0.85      0.85        41
+                        org:members       0.83      0.38      0.52        40
+                        per:charges       1.00      1.00      1.00        35
+                       per:siblings       0.76      0.71      0.73        41
+               per:country_of_birth       0.30      0.50      0.38         6
+                          per:title       0.91      1.00      0.95        41
+          org:top_members/employees       0.72      0.95      0.82        41
+                  per:date_of_death       1.00      0.95      0.97        37
+       per:stateorprovince_of_birth       0.50      0.89      0.64         9
+                      org:member_of       0.44      0.25      0.32        28
+       per:stateorprovince_of_death       0.59      0.83      0.69        12
+                        org:founded       0.95      0.76      0.84        25
+    org:number_of_employees/members       1.00      0.89      0.94        18
+                    per:employee_of       1.00      0.80      0.89        41
+                        org:parents       0.56      0.66      0.61        41
+                     org:founded_by       0.88      0.76      0.82        38
+                  per:city_of_death       0.70      0.90      0.79        21
+                 per:cause_of_death       0.97      1.00      0.99        33
+        org:country_of_headquarters       0.72      0.95      0.82        41
+                   org:subsidiaries       0.52      0.85      0.65        41
+
+                           accuracy                           0.79      1259
+                          macro avg       0.78      0.80      0.78      1259
+                       weighted avg       0.81      0.79      0.79      1259
+
+Micro F1 Score: 0.7942811755361397
+Macro F1 Score: 0.777624866593451
+Restart Attempt 4
+Processing Task 10
+Memory Accuracy: [0.9810126582278481, 0.9559322033898305, 0.9496402877697842, 0.8985239852398524, 0.8680445151033387, 0.8600508905852418, 0.8572996706915478, 0.8294416243654822, 0.804986642920748, 0.7942811755361397]
+Task Accuracy: [0.9810126582278481, 0.948905109489051, 0.9590163934426229, 0.928, 0.8390804597701149, 0.8662420382165605, 0.96, 0.7432432432432432, 0.782608695652174, 0.9264705882352942]
+Current Average Accuracy: 0.8799213653829814
+[2025-04-23 19:14:33] Intermediate result: 0.8799213653829814  (Index 3)
+Training Task 0: Relation Set = ['org:alternate_names', 'per:charges', 'per:schools_attended', 'per:cause_of_death'].
+Task 0: Total number of data samples = 1315
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                      precision    recall  f1-score   support
+
+ org:alternate_names       0.95      1.00      0.98        41
+         per:charges       1.00      1.00      1.00        35
+per:schools_attended       1.00      0.94      0.97        35
+  per:cause_of_death       1.00      1.00      1.00        33
+
+            accuracy                           0.99       144
+           macro avg       0.99      0.99      0.99       144
+        weighted avg       0.99      0.99      0.99       144
+
+Micro F1 Score: 0.9861111111111112
+Macro F1 Score: 0.9866946778711485
+Restart Attempt 5
+Processing Task 1
+Memory Accuracy: [0.9861111111111112]
+Task Accuracy: [0.9861111111111112]
+Training Task 1: Relation Set = ['org:stateorprovince_of_headquarters', 'per:stateorprovinces_of_residence', 'per:city_of_birth', 'per:country_of_birth'].
+Task 1: Total number of data samples = 1333
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+                org:alternate_names       1.00      0.95      0.97        41
+                        per:charges       1.00      1.00      1.00        35
+               per:schools_attended       0.97      0.91      0.94        35
+                 per:cause_of_death       1.00      1.00      1.00        33
+org:stateorprovince_of_headquarters       0.89      0.95      0.92        41
+  per:stateorprovinces_of_residence       0.97      0.95      0.96        41
+                  per:city_of_birth       1.00      1.00      1.00        14
+               per:country_of_birth       0.75      1.00      0.86         6
+
+                           accuracy                           0.96       246
+                          macro avg       0.95      0.97      0.96       246
+                       weighted avg       0.97      0.96      0.96       246
+
+Micro F1 Score: 0.9634146341463414
+Macro F1 Score: 0.956741168689698
+Restart Attempt 5
+Processing Task 2
+Memory Accuracy: [0.9861111111111112, 0.9634146341463414]
+Task Accuracy: [0.9861111111111112, 0.9607843137254902]
+Training Task 2: Relation Set = ['per:stateorprovince_of_death', 'per:date_of_birth', 'org:number_of_employees/members', 'per:cities_of_residence'].
+Task 2: Total number of data samples = 1080
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+                org:alternate_names       0.98      1.00      0.99        41
+                        per:charges       1.00      1.00      1.00        35
+               per:schools_attended       0.97      0.91      0.94        35
+                 per:cause_of_death       1.00      1.00      1.00        33
+org:stateorprovince_of_headquarters       0.97      0.95      0.96        41
+  per:stateorprovinces_of_residence       0.93      0.68      0.79        41
+                  per:city_of_birth       0.92      0.86      0.89        14
+               per:country_of_birth       0.67      1.00      0.80         6
+       per:stateorprovince_of_death       0.45      0.83      0.59        12
+                  per:date_of_birth       1.00      1.00      1.00        14
+    org:number_of_employees/members       0.89      0.94      0.92        18
+            per:cities_of_residence       0.93      0.93      0.93        41
+
+                           accuracy                           0.92       331
+                          macro avg       0.89      0.93      0.90       331
+                       weighted avg       0.94      0.92      0.92       331
+
+Micro F1 Score: 0.9214501510574018
+Macro F1 Score: 0.9003080004470374
+Restart Attempt 5
+Processing Task 3
+Memory Accuracy: [0.9861111111111112, 0.9634146341463414, 0.9214501510574018]
+Task Accuracy: [0.9861111111111112, 0.9607843137254902, 0.9294117647058824]
+Training Task 3: Relation Set = ['org:top_members/employees', 'per:stateorprovince_of_birth', 'per:siblings', 'per:city_of_death'].
+Task 3: Total number of data samples = 1123
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+                org:alternate_names       0.98      1.00      0.99        41
+                        per:charges       0.97      1.00      0.99        35
+               per:schools_attended       0.92      0.94      0.93        35
+                 per:cause_of_death       1.00      1.00      1.00        33
+org:stateorprovince_of_headquarters       0.95      0.98      0.96        41
+  per:stateorprovinces_of_residence       0.93      0.61      0.74        41
+                  per:city_of_birth       0.88      1.00      0.93        14
+               per:country_of_birth       0.75      1.00      0.86         6
+       per:stateorprovince_of_death       0.69      0.92      0.79        12
+                  per:date_of_birth       1.00      1.00      1.00        14
+    org:number_of_employees/members       1.00      0.89      0.94        18
+            per:cities_of_residence       0.94      0.80      0.87        41
+          org:top_members/employees       0.93      1.00      0.96        41
+       per:stateorprovince_of_birth       0.47      0.89      0.62         9
+                       per:siblings       1.00      0.95      0.97        41
+                  per:city_of_death       0.86      0.90      0.88        21
+
+                           accuracy                           0.92       443
+                          macro avg       0.89      0.93      0.90       443
+                       weighted avg       0.93      0.92      0.92       443
+
+Micro F1 Score: 0.9209932279909706
+Macro F1 Score: 0.9016996082306004
+Restart Attempt 5
+Processing Task 4
+Memory Accuracy: [0.9861111111111112, 0.9634146341463414, 0.9214501510574018, 0.9209932279909706]
+Task Accuracy: [0.9861111111111112, 0.9607843137254902, 0.9294117647058824, 0.9553571428571429]
+Training Task 4: Relation Set = ['org:founded', 'per:age', 'org:members', 'org:parents'].
+Task 4: Total number of data samples = 1922
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+                org:alternate_names       0.88      0.73      0.80        41
+                        per:charges       0.97      1.00      0.99        35
+               per:schools_attended       0.92      0.94      0.93        35
+                 per:cause_of_death       1.00      1.00      1.00        33
+org:stateorprovince_of_headquarters       0.95      0.98      0.96        41
+  per:stateorprovinces_of_residence       0.93      0.66      0.77        41
+                  per:city_of_birth       0.88      1.00      0.93        14
+               per:country_of_birth       0.75      1.00      0.86         6
+       per:stateorprovince_of_death       0.69      0.92      0.79        12
+                  per:date_of_birth       1.00      1.00      1.00        14
+    org:number_of_employees/members       1.00      0.83      0.91        18
+            per:cities_of_residence       0.92      0.83      0.87        41
+          org:top_members/employees       0.93      1.00      0.96        41
+       per:stateorprovince_of_birth       0.53      0.89      0.67         9
+                       per:siblings       0.97      0.95      0.96        41
+                  per:city_of_death       0.86      0.86      0.86        21
+                        org:founded       1.00      0.96      0.98        25
+                            per:age       1.00      0.98      0.99        41
+                        org:members       0.85      0.82      0.84        40
+                        org:parents       0.76      0.95      0.85        41
+
+                           accuracy                           0.91       590
+                          macro avg       0.89      0.91      0.90       590
+                       weighted avg       0.91      0.91      0.90       590
+
+Micro F1 Score: 0.9050847457627119
+Macro F1 Score: 0.8954923429858519
+Restart Attempt 5
+Processing Task 5
+Memory Accuracy: [0.9861111111111112, 0.9634146341463414, 0.9214501510574018, 0.9209932279909706, 0.9050847457627119]
+Task Accuracy: [0.9861111111111112, 0.9607843137254902, 0.9294117647058824, 0.9553571428571429, 0.9251700680272109]
+Training Task 5: Relation Set = ['org:country_of_headquarters', 'org:shareholders', 'per:spouse', 'org:founded_by'].
+Task 5: Total number of data samples = 1757
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+                org:alternate_names       0.85      0.85      0.85        41
+                        per:charges       0.97      1.00      0.99        35
+               per:schools_attended       0.94      0.91      0.93        35
+                 per:cause_of_death       1.00      1.00      1.00        33
+org:stateorprovince_of_headquarters       0.91      0.98      0.94        41
+  per:stateorprovinces_of_residence       0.93      0.68      0.79        41
+                  per:city_of_birth       0.88      1.00      0.93        14
+               per:country_of_birth       0.60      1.00      0.75         6
+       per:stateorprovince_of_death       0.69      0.92      0.79        12
+                  per:date_of_birth       1.00      1.00      1.00        14
+    org:number_of_employees/members       1.00      0.83      0.91        18
+            per:cities_of_residence       0.97      0.83      0.89        41
+          org:top_members/employees       0.84      0.78      0.81        41
+       per:stateorprovince_of_birth       0.53      0.89      0.67         9
+                       per:siblings       0.97      0.83      0.89        41
+                  per:city_of_death       0.86      0.90      0.88        21
+                        org:founded       1.00      0.96      0.98        25
+                            per:age       1.00      0.98      0.99        41
+                        org:members       0.86      0.60      0.71        40
+                        org:parents       0.78      0.68      0.73        41
+        org:country_of_headquarters       0.79      0.90      0.84        41
+                   org:shareholders       0.42      0.76      0.54        17
+                         per:spouse       0.83      0.98      0.90        41
+                     org:founded_by       0.77      0.79      0.78        38
+
+                           accuracy                           0.86       727
+                          macro avg       0.85      0.88      0.85       727
+                       weighted avg       0.88      0.86      0.86       727
+
+Micro F1 Score: 0.8610729023383769
+Macro F1 Score: 0.8535924873806472
+Restart Attempt 5
+Processing Task 6
+Memory Accuracy: [0.9861111111111112, 0.9634146341463414, 0.9214501510574018, 0.9209932279909706, 0.9050847457627119, 0.8610729023383769]
+Task Accuracy: [0.9861111111111112, 0.9607843137254902, 0.9294117647058824, 0.9553571428571429, 0.9251700680272109, 0.8759124087591241]
+Training Task 6: Relation Set = ['org:member_of', 'per:religion', 'per:alternate_names', 'per:other_family'].
+Task 6: Total number of data samples = 738
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+                org:alternate_names       0.79      0.80      0.80        41
+                        per:charges       1.00      1.00      1.00        35
+               per:schools_attended       0.97      0.89      0.93        35
+                 per:cause_of_death       1.00      1.00      1.00        33
+org:stateorprovince_of_headquarters       0.88      0.93      0.90        41
+  per:stateorprovinces_of_residence       0.94      0.73      0.82        41
+                  per:city_of_birth       0.78      1.00      0.88        14
+               per:country_of_birth       0.55      1.00      0.71         6
+       per:stateorprovince_of_death       0.69      0.92      0.79        12
+                  per:date_of_birth       1.00      0.93      0.96        14
+    org:number_of_employees/members       1.00      0.83      0.91        18
+            per:cities_of_residence       0.94      0.83      0.88        41
+          org:top_members/employees       0.82      0.80      0.81        41
+       per:stateorprovince_of_birth       0.62      0.89      0.73         9
+                       per:siblings       0.91      0.78      0.84        41
+                  per:city_of_death       0.90      0.90      0.90        21
+                        org:founded       1.00      0.96      0.98        25
+                            per:age       1.00      0.98      0.99        41
+                        org:members       0.90      0.65      0.75        40
+                        org:parents       0.67      0.63      0.65        41
+        org:country_of_headquarters       0.74      0.83      0.78        41
+                   org:shareholders       0.46      0.65      0.54        17
+                         per:spouse       0.81      0.71      0.75        41
+                     org:founded_by       0.76      0.82      0.78        38
+                      org:member_of       0.50      0.50      0.50        28
+                       per:religion       0.85      0.85      0.85        20
+                per:alternate_names       0.86      0.78      0.82        23
+                   per:other_family       0.59      0.80      0.68        41
+
+                           accuracy                           0.82       839
+                          macro avg       0.82      0.84      0.82       839
+                       weighted avg       0.84      0.82      0.82       839
+
+Micro F1 Score: 0.8200238379022646
+Macro F1 Score: 0.8190596660915551
+Restart Attempt 5
+Processing Task 7
+Memory Accuracy: [0.9861111111111112, 0.9634146341463414, 0.9214501510574018, 0.9209932279909706, 0.9050847457627119, 0.8610729023383769, 0.8200238379022646]
+Task Accuracy: [0.9861111111111112, 0.9607843137254902, 0.9294117647058824, 0.9553571428571429, 0.9251700680272109, 0.8759124087591241, 0.7321428571428571]
+Training Task 7: Relation Set = ['org:dissolved', 'per:origin', 'per:employee_of', 'org:city_of_headquarters'].
+Task 7: Total number of data samples = 2075
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+                org:alternate_names       1.00      0.61      0.76        41
+                        per:charges       1.00      1.00      1.00        35
+               per:schools_attended       0.91      0.83      0.87        35
+                 per:cause_of_death       1.00      1.00      1.00        33
+org:stateorprovince_of_headquarters       0.90      0.93      0.92        41
+  per:stateorprovinces_of_residence       0.91      0.73      0.81        41
+                  per:city_of_birth       0.74      1.00      0.85        14
+               per:country_of_birth       0.40      0.67      0.50         6
+       per:stateorprovince_of_death       0.69      0.92      0.79        12
+                  per:date_of_birth       1.00      0.93      0.96        14
+    org:number_of_employees/members       1.00      0.83      0.91        18
+            per:cities_of_residence       0.89      0.80      0.85        41
+          org:top_members/employees       0.77      0.90      0.83        41
+       per:stateorprovince_of_birth       0.62      0.89      0.73         9
+                       per:siblings       0.91      0.78      0.84        41
+                  per:city_of_death       0.90      0.90      0.90        21
+                        org:founded       0.86      0.72      0.78        25
+                            per:age       1.00      0.98      0.99        41
+                        org:members       0.71      0.50      0.59        40
+                        org:parents       0.58      0.83      0.68        41
+        org:country_of_headquarters       0.68      0.83      0.75        41
+                   org:shareholders       0.43      0.53      0.47        17
+                         per:spouse       0.77      0.73      0.75        41
+                     org:founded_by       0.83      0.79      0.81        38
+                      org:member_of       0.47      0.25      0.33        28
+                       per:religion       0.88      0.75      0.81        20
+                per:alternate_names       0.84      0.70      0.76        23
+                   per:other_family       0.62      0.80      0.70        41
+                      org:dissolved       0.25      0.40      0.31         5
+                         per:origin       0.81      0.83      0.82        41
+                    per:employee_of       0.78      0.85      0.81        41
+           org:city_of_headquarters       0.87      1.00      0.93        41
+
+                           accuracy                           0.80       967
+                          macro avg       0.78      0.79      0.78       967
+                       weighted avg       0.82      0.80      0.80       967
+
+Micro F1 Score: 0.8004136504653567
+Macro F1 Score: 0.7750356273699766
+Restart Attempt 5
+Processing Task 8
+Memory Accuracy: [0.9861111111111112, 0.9634146341463414, 0.9214501510574018, 0.9209932279909706, 0.9050847457627119, 0.8610729023383769, 0.8200238379022646, 0.8004136504653567]
+Task Accuracy: [0.9861111111111112, 0.9607843137254902, 0.9294117647058824, 0.9553571428571429, 0.9251700680272109, 0.8759124087591241, 0.7321428571428571, 0.875]
+Training Task 8: Relation Set = ['org:subsidiaries', 'org:website', 'per:countries_of_residence', 'org:political/religious_affiliation'].
+Task 8: Total number of data samples = 1782
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+                org:alternate_names       0.94      0.76      0.84        41
+                        per:charges       1.00      1.00      1.00        35
+               per:schools_attended       0.94      0.91      0.93        35
+                 per:cause_of_death       1.00      1.00      1.00        33
+org:stateorprovince_of_headquarters       0.93      0.93      0.93        41
+  per:stateorprovinces_of_residence       0.91      0.73      0.81        41
+                  per:city_of_birth       0.82      1.00      0.90        14
+               per:country_of_birth       0.43      0.50      0.46         6
+       per:stateorprovince_of_death       0.69      0.92      0.79        12
+                  per:date_of_birth       1.00      0.93      0.96        14
+    org:number_of_employees/members       1.00      0.83      0.91        18
+            per:cities_of_residence       0.89      0.80      0.85        41
+          org:top_members/employees       0.80      0.90      0.85        41
+       per:stateorprovince_of_birth       0.62      0.89      0.73         9
+                       per:siblings       0.91      0.76      0.83        41
+                  per:city_of_death       0.90      0.90      0.90        21
+                        org:founded       0.90      0.72      0.80        25
+                            per:age       1.00      0.98      0.99        41
+                        org:members       0.85      0.55      0.67        40
+                        org:parents       0.73      0.66      0.69        41
+        org:country_of_headquarters       0.72      0.93      0.81        41
+                   org:shareholders       0.36      0.47      0.41        17
+                         per:spouse       0.83      0.73      0.78        41
+                     org:founded_by       0.82      0.82      0.82        38
+                      org:member_of       0.90      0.32      0.47        28
+                       per:religion       0.91      1.00      0.95        20
+                per:alternate_names       0.86      0.78      0.82        23
+                   per:other_family       0.59      0.83      0.69        41
+                      org:dissolved       0.33      0.60      0.43         5
+                         per:origin       0.71      0.66      0.68        41
+                    per:employee_of       0.87      0.80      0.84        41
+           org:city_of_headquarters       0.93      0.98      0.95        41
+                   org:subsidiaries       0.59      0.90      0.71        41
+                        org:website       0.93      0.96      0.95        27
+         per:countries_of_residence       0.68      0.78      0.73        41
+org:political/religious_affiliation       0.95      0.91      0.93        23
+
+                           accuracy                           0.82      1099
+                          macro avg       0.81      0.81      0.80      1099
+                       weighted avg       0.84      0.82      0.82      1099
+
+Micro F1 Score: 0.816196542311192
+Macro F1 Score: 0.799723246438475
+Restart Attempt 5
+Processing Task 9
+Memory Accuracy: [0.9861111111111112, 0.9634146341463414, 0.9214501510574018, 0.9209932279909706, 0.9050847457627119, 0.8610729023383769, 0.8200238379022646, 0.8004136504653567, 0.816196542311192]
+Task Accuracy: [0.9861111111111112, 0.9607843137254902, 0.9294117647058824, 0.9553571428571429, 0.9251700680272109, 0.8759124087591241, 0.7321428571428571, 0.875, 0.8787878787878788]
+Training Task 9: Relation Set = ['per:parents', 'per:date_of_death', 'per:children', 'per:title'].
+Task 9: Total number of data samples = 1916
+Selecting Optimal Examples for Long_Term_Memory Consolidation
+Engaging in NREM and REM cycle training for enhanced continual relation extraction
+Evaluation...
+
+                                     precision    recall  f1-score   support
+
+                org:alternate_names       0.88      0.71      0.78        41
+                        per:charges       1.00      1.00      1.00        35
+               per:schools_attended       0.94      0.86      0.90        35
+                 per:cause_of_death       1.00      1.00      1.00        33
+org:stateorprovince_of_headquarters       0.90      0.93      0.92        41
+  per:stateorprovinces_of_residence       0.91      0.76      0.83        41
+                  per:city_of_birth       0.82      1.00      0.90        14
+               per:country_of_birth       0.40      0.67      0.50         6
+       per:stateorprovince_of_death       0.69      0.92      0.79        12
+                  per:date_of_birth       0.93      0.93      0.93        14
+    org:number_of_employees/members       1.00      0.89      0.94        18
+            per:cities_of_residence       0.87      0.83      0.85        41
+          org:top_members/employees       0.79      0.90      0.84        41
+       per:stateorprovince_of_birth       0.62      0.89      0.73         9
+                       per:siblings       0.80      0.78      0.79        41
+                  per:city_of_death       0.90      0.90      0.90        21
+                        org:founded       0.89      0.68      0.77        25
+                            per:age       1.00      0.98      0.99        41
+                        org:members       0.73      0.55      0.63        40
+                        org:parents       0.68      0.68      0.68        41
+        org:country_of_headquarters       0.71      0.88      0.78        41
+                   org:shareholders       0.40      0.47      0.43        17
+                         per:spouse       0.73      0.73      0.73        41
+                     org:founded_by       0.84      0.82      0.83        38
+                      org:member_of       1.00      0.25      0.40        28
+                       per:religion       0.95      0.95      0.95        20
+                per:alternate_names       0.94      0.65      0.77        23
+                   per:other_family       0.51      0.59      0.55        41
+                      org:dissolved       0.30      0.60      0.40         5
+                         per:origin       0.71      0.66      0.68        41
+                    per:employee_of       0.89      0.80      0.85        41
+           org:city_of_headquarters       0.91      1.00      0.95        41
+                   org:subsidiaries       0.58      0.80      0.67        41
+                        org:website       0.93      0.96      0.95        27
+         per:countries_of_residence       0.70      0.76      0.73        41
+org:political/religious_affiliation       0.91      0.91      0.91        23
+                        per:parents       0.79      0.83      0.81        41
+                  per:date_of_death       1.00      0.95      0.97        37
+                       per:children       0.82      0.88      0.85        41
+                          per:title       0.93      1.00      0.96        41
+
+                           accuracy                           0.81      1259
+                          macro avg       0.81      0.81      0.80      1259
+                       weighted avg       0.83      0.81      0.81      1259
+
+Micro F1 Score: 0.8117553613979349
+Macro F1 Score: 0.7960361843521375
+Restart Attempt 5
+Processing Task 10
+Memory Accuracy: [0.9861111111111112, 0.9634146341463414, 0.9214501510574018, 0.9209932279909706, 0.9050847457627119, 0.8610729023383769, 0.8200238379022646, 0.8004136504653567, 0.816196542311192, 0.8117553613979349]
+Task Accuracy: [0.9861111111111112, 0.9607843137254902, 0.9294117647058824, 0.9553571428571429, 0.9251700680272109, 0.8759124087591241, 0.7321428571428571, 0.875, 0.8787878787878788, 0.9125]
+Current Average Accuracy: 0.8806516164483662
+[2025-04-23 19:18:23] Intermediate result: 0.8806516164483662  (Index 4)
+All task results:
+[0.9662162065505981, 0.9252336621284485, 0.8904109597206116, 0.961240291595459, 0.8358209133148193, 0.7913669347763062, 0.976190447807312, 0.8586956262588501, 0.9663865566253662, 0.8739495873451233]
+[0.9611650705337524, 0.8691588640213013, 0.9683544039726257, 0.875, 0.9189189076423645, 0.9636363387107849, 0.907216489315033, 0.9159663915634155, 0.7945205569267273, 0.8780487775802612]
+[0.9781022071838379, 0.9743589758872986, 0.9634146094322205, 0.9621211886405945, 0.9354838728904724, 0.8399999737739563, 0.8442623019218445, 0.7972972989082336, 0.9539473652839661, 0.8102189898490906]
+[0.9810126423835754, 0.9489051103591919, 0.9590163826942444, 0.9279999732971191, 0.8390804529190063, 0.8662420511245728, 0.9599999785423279, 0.7432432174682617, 0.782608687877655, 0.9264705777168274]
+[0.9861111044883728, 0.9607843160629272, 0.929411768913269, 0.9553571343421936, 0.9251700639724731, 0.8759124279022217, 0.7321428656578064, 0.875, 0.8787878751754761, 0.9125000238418579]
+All memory results:
+[0.9662162065505981, 0.9058823585510254, 0.8678303956985474, 0.8584905862808228, 0.8222891688346863, 0.8057284951210022, 0.8202368021011353, 0.8090107440948486, 0.8157894611358643, 0.8109610676765442]
+[0.9611650705337524, 0.8857142925262451, 0.8885869383811951, 0.80859375, 0.8298555612564087, 0.8594815731048584, 0.8409638404846191, 0.8387776613235474, 0.8173515796661377, 0.805401086807251]
+[0.9781022071838379, 0.9645669460296631, 0.9425837397575378, 0.918181836605072, 0.8991097807884216, 0.8682170510292053, 0.8125, 0.7958762645721436, 0.8057041168212891, 0.7926926016807556]
+[0.9810126423835754, 0.9559321999549866, 0.9496402740478516, 0.8985239863395691, 0.8680444955825806, 0.8600509166717529, 0.8572996854782104, 0.8294416069984436, 0.8049866557121277, 0.7942811846733093]
+[0.9861111044883728, 0.9634146094322205, 0.921450138092041, 0.9209932088851929, 0.9050847291946411, 0.8610728979110718, 0.8200238347053528, 0.8004136681556702, 0.8161965608596802, 0.811755359172821]
+Final task results: [0.9745214581489563, 0.9356881976127625, 0.942121684551239, 0.936343789100647, 0.890894889831543, 0.8674315214157104, 0.8839624524116516, 0.8380405306816101, 0.8752501606941223, 0.8802375793457031]
+Final memory results: [0.9745214581489563, 0.935102105140686, 0.9140182733535767, 0.8809566497802734, 0.8648767471313477, 0.8509101867675781, 0.8302048444747925, 0.8147040605545044, 0.8120056390762329, 0.8030182719230652]
+Final average accuracy: 0.8680317997932434
+Total time taken: 1165.723551273346s
+total times:[234.81389212608337, 230.37801098823547, 235.03683066368103, 235.38006234169006, 230.11388897895813]
+[2025-04-23 19:18:23] Final result: 0.8680317997932434
